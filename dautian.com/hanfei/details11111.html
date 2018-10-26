@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" href="css/css.css" rel="stylesheet" />
+<title>产品详情</title>
+</head>
+
+<body>
+    <div class="header">
+            <table width="100%" border="0" cellspacing="0" class="header_text">
+                <tr>
+                    <td>返回</td>
+                    <td>产品详情</td>
+                    <td><a href="index.html">首页</a></td>
+                </tr>
+            </table>
+        </div>
+    <div class="main_details" >
+        <div id="baoming">
+        <div class="line"></div>
+            <table width="95%" border="0" cellspacing="0" class="main">
+                <tr>
+                    <td class="title">一路向西，西藏 | <span>在线报名</span></td>
+                </tr>
+            </table>
+            <div class="line1"></div>
+            
+            <table width="100%" border="0" cellspacing="0" class="main1">   
+                <tr>
+                    <td class="title1">如有疑问添加微信号 <span>hanfei-deaf</span> 咨询</td>
+                </tr>
+                <tr>
+                    <td class="title1"><span>点击在线咨询</span></td>
+                </tr>
+            </table>
+            <div class="line1"></div>
+            <table width="100%" border="0" cellspacing="0" class="mainn">
+                <tr>
+                    <td class="name">姓名：</td>
+                    <td class="frame"><input type="text/css" class="text" placeholder="真实姓名" /></td>
+                </tr>
+                <tr>
+                    <td class="name">性别：</td>
+                    <td class="frame">女:<input type="radio"  class="text2" value="" />
+                                      男:<input type="radio"  class="text2" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">手机号：</td>
+                    <td class="frame"><input type="text/css" class="text" placeholder="行前一周请保持短信联系"/></td>
+                </tr>
+                <tr>
+                    <td class="name">微信号：</td>
+                    <td class="frame"><input type="text/css" class="text" placeholder="尽量填写，行前建微信群"/></td>
+                </tr>
+                <tr>
+                    <td class="name">身份证：</td>
+                    <td class="frame"><input type="text/css" class="text" placeholder="真实身份证，用于购买保险"/></td>
+                </tr>
+                <tr>
+                    <td class="name">所在城市：</td>
+                    <td class="frame">
+                    <select id="shens" name="shen" onChange="goGos(this.options.selectedIndex)" style="width:45%; height:30px; color:#999;">
+                          <option value="直辖市" selected>直辖市</option>
+                          <option value="浙江省">浙江省</option>
+                          <option value="江苏省">江苏省</option>
+                          <option value="广东省">广东省</option>
+                          <option value="福建省">福建省</option>
+                          <option value="湖南省">湖南省</option>
+                          <option value="湖北省">湖北省</option>
+                          <option value="辽宁省">辽宁省</option>
+                          <option value="吉林省">吉林省</option>
+                          <option value="黑龙江">黑龙江</option>
+                          <option value="河北省">河北省</option>
+                          <option value="河南省">河南省</option>
+                          <option value="山东省">山东省</option>
+                          <option value="陕西省">陕西省</option>
+                          <option value="甘肃省">甘肃省</option>
+                          <option value="青海省">青海省</option>
+                          <option value="新疆">新疆</option>
+                          <option value="山西省">山西省</option>
+                          <option value="四川省">四川省</option>
+                          <option value="贵州省">贵州省</option>
+                          <option value="安徽省">安徽省</option>
+                          <option value="江西省">江西省</option>
+                          <option value="云南省">云南省</option>
+                          <option value="内蒙古">内蒙古</option>
+                          <option value="广西">广西</option>
+                          <option value="西藏">西藏</option>
+                          <option value="宁夏">宁夏</option>
+                          <option value="海南省">海南省</option>
+                   </select>
+                   <select id="citys" name="city" style="width:50%; height:30px; color:#999;">
+                          <option value="北京" selected>北京</option>
+                          <option value="上海">上海</option>
+                          <option value="天津">天津</option>
+                          <option value="重庆">重庆</option>
+                  </select>
+                                            <script>
+                                            <!-- 
+                                            var groupss=document.getElementById("shens").options.length;
+                                            var groups=new Array(groupss);
+                                            for (i=0; i<groupss; i++) 
+                                            groups[i]=new Array();
+                                            groups[0][0]=new Option("北京","北京");
+                                            groups[0][1]=new Option("上海","上海");
+                                            groups[0][2]=new Option("天津","天津");
+                                            groups[0][3]=new Option("重庆","重庆");
+                                            groups[1][0]=new Option("杭州","杭州");
+                                            groups[1][1]=new Option("宁波","宁波");
+                                            groups[1][2]=new Option("温州","温州");
+                                            groups[1][3]=new Option("嘉兴","嘉兴");
+                                            groups[1][4]=new Option("湖州","湖州");
+                                            groups[1][5]=new Option("绍兴","绍兴");
+                                            groups[1][6]=new Option("金华","金华");
+                                            groups[1][7]=new Option("衢州","衢州");
+                                            groups[1][8]=new Option("舟山","舟山");
+                                            groups[1][9]=new Option("台州","台州");
+                                            groups[1][10]=new Option("丽水","丽水");
+                                            groups[2][0]=new Option("南京","南京");
+                                            groups[2][1]=new Option("无锡","无锡");
+                                            groups[2][2]=new Option("徐州","徐州");
+                                            groups[2][3]=new Option("常州","常州");
+                                            groups[2][4]=new Option("苏州","苏州");
+                                            groups[2][5]=new Option("南通","南通");
+                                            groups[2][6]=new Option("连云港","连云港");
+                                            groups[2][7]=new Option("淮安","淮安");
+                                            groups[2][8]=new Option("盐城","盐城");
+                                            groups[2][9]=new Option("扬州","扬州");
+                                            groups[2][10]=new Option("镇江","镇江");
+                                            groups[2][11]=new Option("泰州","泰州");
+                                            groups[2][12]=new Option("宿迁","宿迁");
+                                            groups[3][0]=new Option("广州","广州");
+                                            groups[3][1]=new Option("韶关","韶关");
+                                            groups[3][2]=new Option("深圳","深圳");
+                                            groups[3][3]=new Option("珠海","珠海");
+                                            groups[3][4]=new Option("汕头","汕头");
+                                            groups[3][5]=new Option("佛山","佛山");
+                                            groups[3][6]=new Option("江门","江门");
+                                            groups[3][7]=new Option("湛江","湛江");
+                                            groups[3][8]=new Option("茂名","茂名");
+                                            groups[3][9]=new Option("肇庆","肇庆");
+                                            groups[3][10]=new Option("惠州","惠州");
+                                            groups[3][11]=new Option("梅州","梅州");
+                                            groups[3][12]=new Option("汕尾","汕尾");
+                                            groups[3][13]=new Option("河源","河源");
+                                            groups[3][14]=new Option("阳江","阳江");
+                                            groups[3][15]=new Option("清远","清远");
+                                            groups[3][16]=new Option("东莞","东莞");
+                                            groups[3][17]=new Option("中山","中山");
+                                            groups[3][18]=new Option("潮州","潮州");
+                                            groups[3][19]=new Option("揭阳","揭阳");
+                                            groups[3][20]=new Option("云浮","云浮");
+                                            groups[4][0]=new Option("福州","福州");
+                                            groups[4][1]=new Option("厦门","厦门");
+                                            groups[4][2]=new Option("莆田","莆田");
+                                            groups[4][3]=new Option("三明","三明");
+                                            groups[4][4]=new Option("泉州","泉州");
+                                            groups[4][5]=new Option("漳州","漳州");
+                                            groups[4][6]=new Option("南平","南平");
+                                            groups[4][7]=new Option("龙岩","龙岩");
+                                            groups[4][8]=new Option("宁德","宁德");
+                                            groups[5][0]=new Option("长沙","长沙");
+                                            groups[5][1]=new Option("株洲","株洲");
+                                            groups[5][2]=new Option("湘潭","湘潭");
+                                            groups[5][3]=new Option("衡阳","衡阳");
+                                            groups[5][4]=new Option("邵阳","邵阳");
+                                            groups[5][5]=new Option("岳阳","岳阳");
+                                            groups[5][6]=new Option("常德","常德");
+                                            groups[5][7]=new Option("张家界","张家界");
+                                            groups[5][8]=new Option("益阳","益阳");
+                                            groups[5][9]=new Option("郴州","郴州");
+                                            groups[5][10]=new Option("永州","永州");
+                                            groups[5][11]=new Option("怀化","怀化");
+                                            groups[5][12]=new Option("娄底","娄底");
+                                            groups[5][13]=new Option("湘西","湘西");
+                                            groups[6][0]=new Option("武汉","武汉");
+                                            groups[6][1]=new Option("黄石","黄石");
+                                            groups[6][2]=new Option("十堰","十堰");
+                                            groups[6][3]=new Option("宜昌","宜昌");
+                                            groups[6][5]=new Option("襄阳","襄阳");
+                                            groups[6][6]=new Option("鄂州","鄂州");
+                                            groups[6][7]=new Option("荆门","荆门");
+                                            groups[6][8]=new Option("孝感","孝感");
+                                            groups[6][9]=new Option("荆州","荆州");
+                                            groups[6][10]=new Option("黄冈","黄冈");
+                                            groups[6][11]=new Option("咸宁","咸宁");
+                                            groups[6][12]=new Option("随州","随州");
+                                            groups[6][13]=new Option("恩施","恩施");
+                                            groups[6][14]=new Option("仙桃","仙桃");
+                                            groups[6][15]=new Option("潜江","潜江");
+                                            groups[6][16]=new Option("天门","天门");
+                                            groups[6][16]=new Option("神农架","神农架");
+                                            groups[7][0]=new Option("沈阳","沈阳");
+                                            groups[7][1]=new Option("大连","大连");
+                                            groups[7][2]=new Option("鞍山","鞍山");
+                                            groups[7][3]=new Option("抚顺","抚顺");
+                                            groups[7][4]=new Option("本溪","本溪");
+                                            groups[7][5]=new Option("丹东","丹东");
+                                            groups[7][6]=new Option("锦州","锦州");
+                                            groups[7][7]=new Option("营口","营口");
+                                            groups[7][8]=new Option("阜新","大庆");
+                                            groups[7][9]=new Option("辽阳","辽阳");
+                                            groups[7][10]=new Option("盘锦","盘锦");
+                                            groups[7][11]=new Option("铁岭","铁岭");
+                                            groups[7][12]=new Option("朝阳","朝阳");
+                                            groups[7][13]=new Option("葫芦岛","葫芦岛");
+                                            groups[8][0]=new Option("长春","长春");
+                                            groups[8][1]=new Option("吉林","吉林");
+                                            groups[8][2]=new Option("四平","四平");
+                                            groups[8][3]=new Option("辽源","辽源");
+                                            groups[8][4]=new Option("通化","通化");
+                                            groups[8][5]=new Option("白山","白山");
+                                            groups[8][6]=new Option("松原","松原");
+                                            groups[8][7]=new Option("白城","白城");
+                                            groups[8][8]=new Option("延边","延边");
+                                            groups[9][0]=new Option("哈尔滨","哈尔滨");
+                                            groups[9][1]=new Option("齐齐哈尔","齐齐哈尔");
+                                            groups[9][2]=new Option("鸡西","鸡西");
+                                            groups[9][3]=new Option("鹤岗","鹤岗");
+                                            groups[9][4]=new Option("双鸭山","双鸭山");
+                                            groups[9][5]=new Option("大庆","大庆");
+                                            groups[9][6]=new Option("伊春","伊春");
+                                            groups[9][7]=new Option("佳木斯","佳木斯");
+                                            groups[9][8]=new Option("七台河","七台河");
+                                            groups[9][9]=new Option("牡丹江","牡丹江");
+                                            groups[9][10]=new Option("黑河","黑河");
+                                            groups[9][11]=new Option("绥化","绥化");
+                                            groups[9][12]=new Option("大兴安岭","大兴安岭");
+                                            groups[10][0]=new Option("石家庄","石家庄");
+                                            groups[10][1]=new Option("唐山","唐山");
+                                            groups[10][2]=new Option("秦皇岛","秦皇岛");
+                                            groups[10][3]=new Option("邯郸","邯郸");
+                                            groups[10][4]=new Option("保定","保定");
+                                            groups[10][5]=new Option("张家口","张家口");
+                                            groups[10][6]=new Option("承德","承德");
+                                            groups[10][7]=new Option("沧州","沧州");
+                                            groups[10][8]=new Option("廊坊","廊坊");
+                                            groups[10][9]=new Option("衡水","衡水");
+                                            groups[11][0]=new Option("郑州","郑州");
+                                            groups[11][1]=new Option("开封","开封");
+                                            groups[11][2]=new Option("洛阳","洛阳");
+                                            groups[11][3]=new Option("平顶山","平顶山");
+                                            groups[11][4]=new Option("安阳","安阳");
+                                            groups[11][5]=new Option("鹤壁","鹤壁");
+                                            groups[11][6]=new Option("新乡","新乡");
+                                            groups[11][7]=new Option("焦作","焦作");
+                                            groups[11][8]=new Option("濮阳","濮阳");
+                                            groups[11][9]=new Option("许昌","许昌");
+                                            groups[11][10]=new Option("漯河","漯河");
+                                            groups[11][11]=new Option("三门峡","三门峡");
+                                            groups[11][12]=new Option("南阳","南阳");
+                                            groups[11][13]=new Option("商丘","商丘");
+                                            groups[11][14]=new Option("信阳","信阳");
+                                            groups[11][15]=new Option("周口","周口");
+                                            groups[11][16]=new Option("驻马店","驻马店");
+                                            groups[11][17]=new Option("济源","济源");
+                                            groups[12][0]=new Option("济南","济南");
+                                            groups[12][1]=new Option("青岛","青岛");
+                                            groups[12][2]=new Option("淄博","淄博");
+                                            groups[12][3]=new Option("枣庄","枣庄");
+                                            groups[12][4]=new Option("东营","东营");
+                                            groups[12][5]=new Option("烟台","烟台");
+                                            groups[12][6]=new Option("潍坊","潍坊");
+                                            groups[12][7]=new Option("济宁","济宁");
+                                            groups[12][8]=new Option("泰安","泰安");
+                                            groups[12][9]=new Option("威海","威海");
+                                            groups[12][10]=new Option("日照","日照");
+                                            groups[12][11]=new Option("莱芜","莱芜");
+                                            groups[12][12]=new Option("临沂","临沂");
+                                            groups[12][13]=new Option("德州","德州");
+                                            groups[12][14]=new Option("聊城","聊城");
+                                            groups[12][15]=new Option("滨州","滨州");
+                                            groups[12][16]=new Option("菏泽","菏泽");
+                                            groups[13][0]=new Option("西安","西安");
+                                            groups[13][1]=new Option("铜川","铜川");
+                                            groups[13][2]=new Option("宝鸡","宝鸡");
+                                            groups[13][3]=new Option("咸阳","咸阳");
+                                            groups[13][4]=new Option("渭南","渭南");
+                                            groups[13][5]=new Option("延安","延安");
+                                            groups[13][6]=new Option("汉中","汉中");
+                                            groups[13][7]=new Option("榆林","榆林");
+                                            groups[13][8]=new Option("安康","安康");
+                                            groups[13][9]=new Option("商洛","商洛");
+                                            groups[14][0]=new Option("兰州","兰州");
+                                            groups[14][1]=new Option("嘉峪关","嘉峪关");
+                                            groups[14][2]=new Option("金昌","金昌");
+                                            groups[14][3]=new Option("白银","白银");
+                                            groups[14][4]=new Option("天水","天水");
+                                            groups[14][5]=new Option("武威","武威");
+                                            groups[14][6]=new Option("张掖","张掖");
+                                            groups[14][7]=new Option("平凉","平凉");
+                                            groups[14][8]=new Option("酒泉","酒泉");
+                                            groups[14][9]=new Option("庆阳","庆阳");
+                                            groups[14][10]=new Option("定西","定西");
+                                            groups[14][11]=new Option("陇南","陇南");
+                                            groups[14][12]=new Option("临夏","临夏");
+                                            groups[14][13]=new Option("甘南","甘南");
+        
+                                            groups[15][0]=new Option("西宁","西宁");
+                                            groups[15][1]=new Option("海东","海东");
+                                            groups[15][2]=new Option("海北","海北");
+                                            groups[15][3]=new Option("黄南","黄南");
+                                            groups[15][4]=new Option("海南","海南");
+                                            groups[15][5]=new Option("果洛","果洛");
+                                            groups[15][6]=new Option("玉树","玉树");
+                                            groups[15][7]=new Option("海西","海西");
+                                            groups[16][0]=new Option("乌鲁木齐","乌鲁木齐");
+                                            groups[16][1]=new Option("克拉玛依","克拉玛依");
+                                            groups[16][2]=new Option("吐鲁番","吐鲁番");
+                                            groups[16][3]=new Option("哈密","哈密");
+                                            groups[16][4]=new Option("昌吉","昌吉");
+                                            groups[16][5]=new Option("博尔塔拉","博尔塔拉");
+                                            groups[16][6]=new Option("巴音郭楞","巴音郭楞");
+                                            groups[16][7]=new Option("阿克苏","阿克苏");
+                                            groups[16][8]=new Option("克孜勒苏","克孜勒苏");
+                                            groups[16][9]=new Option("喀什","喀什");
+                                            groups[16][10]=new Option("和田","和田");
+                                            groups[16][11]=new Option("伊犁","伊犁");
+                                            groups[16][12]=new Option("塔城","塔城");
+                                            groups[16][13]=new Option("阿勒泰","阿勒泰");
+                                            groups[16][14]=new Option("石河子","石河子");
+                                            groups[16][15]=new Option("阿拉尔","阿拉尔");
+                                            groups[16][16]=new Option("图木舒克","图木舒克");
+                                            groups[16][17]=new Option("五家渠","五家渠");
+                                            groups[17][0]=new Option("太原","太原");
+                                            groups[17][1]=new Option("大同","大同");
+                                            groups[17][2]=new Option("阳泉","阳泉");
+                                            groups[17][3]=new Option("长治","长治");
+                                            groups[17][4]=new Option("晋城","晋城");
+                                            groups[17][5]=new Option("朔州","朔州");
+                                            groups[17][6]=new Option("晋中","晋中");
+                                            groups[17][7]=new Option("运城","运城");
+                                            groups[17][8]=new Option("忻州","忻州");
+                                            groups[17][9]=new Option("临汾","临汾");
+                                            groups[17][10]=new Option("吕梁","吕梁");
+                                            groups[18][0]=new Option("成都","成都");
+                                            groups[18][1]=new Option("攀枝花","攀枝花");
+                                            groups[18][2]=new Option("自贡","自贡");
+                                            groups[18][3]=new Option("泸州","泸州");
+                                            groups[18][4]=new Option("德阳","德阳");
+                                            groups[18][5]=new Option("绵阳","绵阳");
+                                            groups[18][6]=new Option("广元","广元");
+                                            groups[18][7]=new Option("遂宁","遂宁");
+                                            groups[18][8]=new Option("内江","内江");
+                                            groups[18][9]=new Option("乐山","乐山");
+                                            groups[18][10]=new Option("南充","南充");
+                                            groups[18][11]=new Option("眉山","眉山");
+                                            groups[18][12]=new Option("宜宾","宜宾");
+                                            groups[18][13]=new Option("广安","广安");
+                                            groups[18][14]=new Option("达州","达州");
+                                            groups[18][15]=new Option("雅安","雅安");
+                                            groups[18][16]=new Option("巴中","巴中");
+                                            groups[18][17]=new Option("资阳","资阳");
+                                            groups[18][18]=new Option("阿坝","阿坝");
+                                            groups[18][19]=new Option("甘孜","甘孜");
+                                            groups[18][20]=new Option("凉山","凉山");
+                                            groups[19][0]=new Option("贵阳","贵阳");
+                                            groups[19][1]=new Option("遵义","遵义");
+                                            groups[19][2]=new Option("安顺","安顺");
+                                            groups[19][3]=new Option("黔西南","黔西南");
+                                            groups[19][4]=new Option("铜仁","铜仁");
+                                            groups[19][5]=new Option("毕节","毕节");
+                                            groups[19][6]=new Option("六盘水","六盘水");
+                                            groups[19][7]=new Option("黔东南","黔东南");
+                                            groups[19][8]=new Option("黔南","黔南");
+                                            groups[20][0]=new Option("合肥","合肥");
+                                            groups[20][1]=new Option("芜湖","芜湖");
+                                            groups[20][2]=new Option("蚌埠","蚌埠");
+                                            groups[20][3]=new Option("淮南","淮南");
+                                            groups[20][4]=new Option("马鞍山","马鞍山");
+                                            groups[20][5]=new Option("淮北","淮北");
+                                            groups[20][6]=new Option("铜陵","铜陵");
+                                            groups[20][7]=new Option("安庆","安庆");
+                                            groups[20][8]=new Option("黄山","黄山");
+                                            groups[20][9]=new Option("滁州","滁州");
+                                            groups[20][10]=new Option("阜阳","阜阳");
+                                            groups[20][11]=new Option("宿州","宿州");
+                                            groups[20][12]=new Option("巢湖","巢湖");
+                                            groups[20][13]=new Option("六安","六安");
+                                            groups[20][14]=new Option("亳州","亳州");
+                                            groups[20][15]=new Option("池州","池州");
+                                            groups[20][16]=new Option("宣城","宣城");
+                                            groups[21][0]=new Option("南昌","南昌");
+                                            groups[21][0]=new Option("景德镇","景德镇");
+                                            groups[21][1]=new Option("萍乡","萍乡");
+                                            groups[21][2]=new Option("九江","九江");
+                                            groups[21][3]=new Option("新余","新余");
+                                            groups[21][4]=new Option("鹰潭","鹰潭");
+                                            groups[21][5]=new Option("赣州","赣州");
+                                            groups[21][6]=new Option("吉安","吉安");
+                                            groups[21][7]=new Option("宜春","宜春");
+                                            groups[21][8]=new Option("抚州","抚州");
+                                            groups[21][9]=new Option("上饶","上饶");
+                                            groups[22][0]=new Option("昆明","昆明");
+                                            groups[22][1]=new Option("曲靖","曲靖");
+                                            groups[22][2]=new Option("玉溪","玉溪");
+                                            groups[22][3]=new Option("保山","保山");
+                                            groups[22][4]=new Option("昭通","昭通");
+                                            groups[22][5]=new Option("丽江","丽江");
+                                            groups[22][6]=new Option("普洱","普洱");
+                                            groups[22][7]=new Option("临沧","临沧");
+                                            groups[22][8]=new Option("楚雄","楚雄");
+                                            groups[22][9]=new Option("红河","红河");
+                                            groups[22][10]=new Option("文山","文山");
+                                            groups[22][11]=new Option("西双版纳","西双版纳");
+                                            groups[22][12]=new Option("大理","大理");
+                                            groups[22][13]=new Option("德宏","德宏");
+                                            groups[22][14]=new Option("怒江","怒江");
+                                            groups[22][15]=new Option("迪庆","迪庆");
+                                            groups[23][0]=new Option("呼和浩特","呼和浩特");
+                                            groups[23][1]=new Option("包头","包头");
+                                            groups[23][2]=new Option("乌海","乌海");
+                                            groups[23][3]=new Option("赤峰","赤峰");
+                                            groups[23][4]=new Option("通辽","通辽");
+                                            groups[23][5]=new Option("鄂尔多斯","鄂尔多斯");
+                                            groups[23][6]=new Option("呼伦贝尔","呼伦贝尔");
+                                            groups[23][7]=new Option("巴彦淖尔","巴彦淖尔");
+                                            groups[23][8]=new Option("乌兰察布","乌兰察布");
+                                            groups[23][9]=new Option("兴安盟","兴安盟");
+                                            groups[23][10]=new Option("锡林郭勒","锡林郭勒");
+                                            groups[23][11]=new Option("阿拉善盟","阿拉善盟");
+                                            groups[24][0]=new Option("南宁","南宁");
+                                            groups[24][1]=new Option("柳州","柳州");
+                                            groups[24][2]=new Option("桂林","桂林");
+                                            groups[24][3]=new Option("梧州","梧州");
+                                            groups[24][4]=new Option("北海","北海");
+                                            groups[24][5]=new Option("防城港","防城港");
+                                            groups[24][6]=new Option("钦州","钦州");
+                                            groups[24][7]=new Option("贵港","贵港");
+                                            groups[24][8]=new Option("玉林","玉林");
+                                            groups[24][9]=new Option("百色","百色");
+                                            groups[24][10]=new Option("贺州","贺州");
+                                            groups[24][11]=new Option("河池","河池");
+                                            groups[24][12]=new Option("来宾","来宾");
+                                            groups[24][13]=new Option("崇左","崇左");
+                                            groups[25][0]=new Option("拉萨","拉萨");
+                                            groups[25][1]=new Option("昌都","昌都");
+                                            groups[25][2]=new Option("山南","山南");
+                                            groups[25][3]=new Option("日喀则","日喀则");
+                                            groups[25][4]=new Option("那曲地区","那曲地区");
+                                            groups[25][5]=new Option("阿里地区","阿里地区");
+                                            groups[25][6]=new Option("林芝地区","林芝地区");
+                                            groups[26][0]=new Option("银川","银川");
+                                            groups[26][1]=new Option("石嘴山","石嘴山");
+                                            groups[26][2]=new Option("吴忠","吴忠");
+                                            groups[26][3]=new Option("固原","固原");
+                                            groups[26][4]=new Option("中卫","中卫");
+                                            groups[27][0]=new Option("海口","海口");
+                                            groups[27][1]=new Option("三亚","三亚");
+                                            groups[27][2]=new Option("五指山","五指山");
+                                            groups[27][3]=new Option("琼海","琼海");
+                                            groups[27][4]=new Option("儋州","儋州");
+                                            groups[27][5]=new Option("文昌","文昌");
+                                            groups[27][6]=new Option("万宁","万宁");
+                                            groups[27][7]=new Option("东方","东方");
+                                            groups[27][8]=new Option("定安","定安");
+                                            groups[27][9]=new Option("屯昌","屯昌");
+                                            groups[27][10]=new Option("澄迈","澄迈");
+                                            groups[27][11]=new Option("临高","临高");
+                                            groups[27][12]=new Option("白沙","白沙");
+                                            groups[27][13]=new Option("昌江","昌江");
+                                            groups[27][14]=new Option("乐东","乐东");
+                                            groups[27][15]=new Option("陵水","陵水");
+                                            groups[27][16]=new Option("保亭","保亭");
+                                            groups[27][17]=new Option("琼中","琼中");
+                                            groups[27][18]=new Option("洋浦","洋浦");
+                                            groups[27][19]=new Option("南沙群岛","南沙群岛");
+                                            groups[27][20]=new Option("中沙群岛","中沙群岛");
+                                             
+                                            function goGos(x){
+                                            var tempff=document.getElementById("citys");     
+                                                for (m=tempff.options.length-1;m>0;m--) 
+                                                   tempff.options[m]=null; 
+                                               for (i=0;i<groups[x].length;i++){ 
+                                                   tempff.options[i]=new Option(groups[x][i].text,groups[x][i].value); 
+                                                } 
+                                                tempff.options[0].selected=true; 
+                                            } 
+                                             
+                                            //--> 
+                                        </script>
+           
+                    </td>
+                </tr>    
+            </table>
+            <div class="line1"></div>
+        </div>
+        <div class="main_details1">
+    	<div class="line"></div>
+        <div class="about_main">
+        	<span>购买须知<p>费用说明：</p></span>
+        	<p>1.全程豪华巴士费用；</p>2.全程中文导游陪同讲解；
+        </div>
+        
+    </div>
+    <div class="line"></div>
+        <a href="product.html"><div class="product">
+            <table table width="100%" border="0" cellspacing="0">
+                <div class="line"></div>
+                <tr>
+                    <td class="product_text">查看产品介绍 ></td>
+                </tr>
+            </table>
+        </div></a>
+        <div class="line"></div>
+    
+    <div id="butt">      
+        <table width="100%" border="0" cellspacing="0" class="button">
+        	<tr>
+            	<td><input type="submit" value="确认报名" class="text" /></td>
+            </tr>
+        </table>
+	</div>
+    </div>
+    <div style="width:100%; height:30px;"></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*头部开始*/
+.header_pic{
+	border-bottom:1px solid #d4d4d4;
+}
+.header_pic img{
+	height:130px;
+	width:100%;
+	vertical-align:middle;
+}
+/*头部结束*/
+/*主体开始*/
+.main{
+	min-width:320px;
+	max-width:768px;
+	margin:0 auto;
+}
+.main_case{
+	width:94%;
+	margin:0 auto;
+	margin-bottom:10px;
+	border-bottom:1px solid #d4d4d4;
+	background:#ffffff;
+}
+.main_case .mc_title{
+	text-align:left;
+	font-size:15px;
+	font-weight:bold;
+	position:relative;
+	height:40px;
+	line-height:40px;
+	background:#036db7;
+	color:#fff;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	-moz-border-top-right-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	padding-left:5%
+}
+.main_case .mc_title .title_icon{
+	position:absolute;
+	top:0;
+	display:block;
+	right:0;
+	width:20%;
+	text-align:center;
+	cursor:pointer;
+}
+.main_case .mc_title .title_icon i{
+	line-height:40px;
+}
+.main_case a{
+	padding:12px 8px;
+	font-size:12px;
+	color:gray;
+	border-left:1px solid #d4d4d4;
+	border-right:1px solid #d4d4d4;
+	border-bottom:1px dashed #d4d4d4;
+	display:block;
+}
+.main_case a.last{
+	border-bottom:none;
+}
+.main_case dl dt{
+	float:left;
+	width:42%;
+}
+.main_case dl dt img{
+	width:100%;
+	padding:8px 0;
+	height:50px;
+	vertical-align:middle;
+}
+.main_case dl dd{
+	width:47%;
+	padding-left:10px;
+	overflow:hidden;
+	float:left;
+	padding-top:4px;
+	height:58px;
+	line-height:19px;
+}
+.main_case dl dd.mc_icon{
+	float:left;
+	width:5%;
+	padding-left:4px;
+}
+.main_case dl dd.mc_icon i{
+	line-height:55px;
+}
+/*主体结束*/

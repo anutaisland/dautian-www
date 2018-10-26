@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>身份验证</title>
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+	 
+    <link rel="stylesheet" href="http://wxdev.mcsys.cn/app_res/register/register-wap.css" />
+	<script type="text/javascript" src="http://wxdev.mcsys.cn/js/jquery-1.7.2.min.js"></script>
+	
+</head>
+
+
+<style>
+button {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    background: #ef4300;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ff730e;
+    -moz-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.25) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.25) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.25) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+button.more_button{  margin-left: 0px;width:98%;height:40px;font-size:14px; text-align:center;}
+</style>
+
+<body>
+<nav>
+            <b></b>
+        请您先验证身份</nav>
+
+        
+        
+<form action="#" id="register_form" autocomplete="off" method="post">
+        <!-- 手机注册开始 -->
+		<div id="error_display" style="text-align:center;color:red;display:none;">
+                <!--错误信息显示区域-->
+        </div>
+        <section class="phone-register">
+            <div class="register-item">
+                <div class="inputs ">
+                    <label for="phone">手机号：</label>
+                    <input type="phone" class="form-control" id="phone" name="phone" />
+                </div>
+                <div class="tip">请输入手机号码</div>
+            </div>
+			
+            <div class="register-item ">
+                <div class="inputs verifycode-inputs">
+                    <label for="phone_vcode">验证码：</label>
+                    <input type="text" name="phone_vcode" class="form-control" id="phone_vcode">
+					<span id="time_show" style="display:none;position:absolute;right:10px;"><i class="time" id="seconds_show">60</i>秒后重新获取</span>
+					<span id="getcode"><a  href="javascript:void(0);"  onclick="get_phone_code();return false;" class="getcode">点击获取验证码</a></span>
+					
+                </div>
+                <div class="tip">请输验证码</div>
+            </div>
+			
+        </section>
+	
+	<button type="button" id="submit" class="more_button" onClick="return wapChkRegister();">注 册</button>
+	
+</form>
+</body>
+</html>

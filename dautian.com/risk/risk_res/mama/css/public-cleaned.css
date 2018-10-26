@@ -1,0 +1,253 @@
+@charset "gb2312";
+
+
+
+/* ýýýýýýýý| */
+
+.swiper-container {height:auto; width:100%;text-align:center;margin:0 auto;position:relative; overflow:hidden; z-index:5; background:#F8F8F8;}
+
+.swiper-wrapper {position: relative;z-index:10;}
+
+.swiper-slide {position:relative;text-align:center; float:left;}
+
+.swiper-slide a{ position:relative; width:100%; height:100%; display:block; overflow:hidden;}
+
+.swiper-slide img{ max-height:100%;vertical-align:middle; position:relative;}
+
+.pagination{ position:absolute; height:1.2em; width:100%;bottom:0.8em;z-index:100; text-align:right; text-align:center;}
+
+.pagination .swiper-pagination-switch{ display:inline-block; height:0.7em; width:0.7em; background:#FFF; border-radius:50%; _display:inline; margin-right:1em;}
+
+.pagination .swiper-active-switch{ background:#44A5FE;}
+
+
+
+/* ýý|æýý */
+
+
+
+
+
+
+
+/* ýýýýý¼ý */
+
+   /* ýýýý */
+
+.i-tab-title{ height:5.8em; background:url(../img/bottomBG.png) bottom center no-repeat; background-size:contain;}
+
+.i-tab-title h2{ width:95%; float:left; }
+
+.i-tab-title h2{ font:400 2em/2.8em 'microsoft yahei'; color:#000;background:url(../img/gps.png) 0.7em center no-repeat; background-size:contain;text-indent:2em; background-size:auto 40%;}
+
+
+
+
+.tab-content{ width:100%;}
+
+.tab-con ul{padding:0 1%; overflow:hidden; background:url(../img/ulbg.png) 49.5% 50% repeat-y;}
+
+.tab-con ul li{ width:48%; border-bottom:1px #D3D3D3 dashed; float:left; padding-bottom:1em; padding-top:1em;}
+
+.tab-con ul li:nth-child(even){ margin-left:4%;}
+
+.tab-con ul li a{font:400 1.2em/1.5em 'microsoft yahei'; color:#000;}
+
+.tab-con ul li a.tab-title-href{clear:both; display:block; padding-top:0.3em; height:2.7em; overflow:hidden;}
+
+.tab-con-href{ margin-bottom:0.5em;padding-top:1em; width:95%; height:5em;}
+
+
+.tab-con-href .img{ width:100%;  margin-right:3%; position:relative;border-radius:0.8em; overflow:hidden;}
+
+.tab-con-href .img img{ width:100%;border-radius:0.8em; display:block;}
+
+
+
+
+
+
+
+
+   /* ý1ý */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ýýýýôýýýýýýý */
+
+
+
+
+
+/* ý1ý-ýýýýý0ýe */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ýýýý³ ýýýýýýýý */
+
+
+
+
+
+
+
+
+
+
+
+/* ýÿý */
+
+
+
+
+/* æýýw */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* æý÷ýýýý| */
+
+
+
+
+
+
+
+/* ýý½ ýýe */
+
+
+
+
+
+
+
+/* ýý½ ýýýýý1ý */
+
+
+
+
+
+
+
+
+
+/* ýý½ ýýýýý1ý ýrýýý */
+
+
+
+
+
+
+
+
+
+
+/* ýýýý */
+
+
+
+
+
+
+									   
+
+/* ±ýý ëýÿý */
+
+
+
+
+
+/* ýýý6ýýý */
+
+
+
+			 
+
+/* 2ý²õýýýýý */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

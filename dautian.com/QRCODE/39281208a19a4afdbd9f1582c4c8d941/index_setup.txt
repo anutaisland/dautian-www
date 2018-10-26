@@ -1,0 +1,8 @@
+版块;部落议事厅;#;http://www.dautian.com/tribe/anuta/anuta-dadangjia.jpg;http://www.dautian.com/anutaisland/url/laoli@anutaisland target=_parent;部落大当家，部落事务都找他;0;0;0;
+版块;部落议事厅;#;http://www.dautian.com/tribe/anuta/anuta-zhaopianqiang.jpg;http://www.dautian.com/anutaisland/anuta/weixin/showMessage2 target=_parent;部落照片墙，部落新人请在这里签到留念;0;0;0;
+版块;部落议事厅;#;http://www.dautian.com/tribe/anuta/anuta-bagua.jpg;http://www.dautian.com/anutaisland/anuta/weixin/showMessage4 target=_parent;八卦吹水，部落爱八卦人士集中营;0;0;0;
+版块;部落议事厅;#;http://www.dautian.com/tribe/anuta/anuta-weixinqun.jpg;http://www.dautian.com/anutaisland/anuta/main/weixinqun target=_parent;微信群，部落各种主题微信群;0;0;0;
+版块;个人贷款;#;http://www.dautian.com/tribe/anuta/anuta-laoli.jpg;http://www.dautian.com/anutaisland/url/laoli@anutaisland target=_parent;Hello World，I'm Old Lee！;0;0;0;
+版块;个人贷款;#;http://www.dautian.com/tribe/anuta/anuta-yuanqi.jpg;http://www.dautian.com/anutaisland/url/yuanqi@anutaisland target=_parent;缘起;0;0;0;
+版块;个人贷款;#;http://www.dautian.com/tribe/anuta/anuta-hangji.jpg;http://www.dautian.com/anutaisland/url/hangji@anutaisland target=_parent;夯基;0;0;0;
+版块;个人贷款;#;http://www.dautian.com/tribe/anuta/anuta-buluo.jpg;http://www.dautian.com/anutaisland/url/buluo@anutaisland target=_parent;部落;0;0;0;

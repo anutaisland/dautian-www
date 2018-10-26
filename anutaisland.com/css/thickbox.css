@@ -1,0 +1,90 @@
+#TB_window {
+	font-family: sans-serif; font-size: 12px;
+}
+#TB_window {
+	left: 50%; top: 50%; text-align: justify; display: none; position: fixed; z-index: 4000;
+}
+#TB_ajaxContent {
+	background: rgb(51, 51, 51); border: 2px solid rgb(85, 85, 85);
+}
+#TB_ajaxContent h3 {
+	margin: 15px 20px; line-height: 140%;
+}
+#TB_ajaxContent p {
+	margin: 15px 20px; line-height: 140%;
+}
+#TB_ajaxContent p {
+	margin-top: 10px; margin-bottom: 0px;
+}
+#TB_overlay {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 1005;
+}
+.TB_overlayMacFFBGHack {
+	background: url("_data/img/thickbox/macFFBgHack.png");
+}
+.TB_overlayBG {
+	filter: alpha(opacity=80); opacity: 0.8; background-color: rgb(0, 0, 0); -moz-opacity: 0.80;
+}
+* html #TB_overlay {
+	position: absolute;
+}
+* html #TB_window {
+	position: absolute;
+}
+#TB_caption {
+	padding: 7px 15px; height: 20px; text-align: right; float: right;
+}
+#TB_count {
+	padding: 7px 15px; height: 20px; text-align: right; float: right;
+}
+#TB_window #TB_count {
+	text-align: left; color: rgb(68, 68, 68); float: left;
+}
+#TB_window span#TB_next a {
+	color: rgb(153, 153, 153);
+}
+#TB_window span#TB_prev a {
+	color: rgb(153, 153, 153);
+}
+#TB_iframe_border {
+	border: 2px solid rgb(85, 85, 85); position: relative;
+}
+#TB_iframe_border iframe {
+	left: 0px; top: -1px; position: absolute;
+}
+#TB_closeAjaxWindow a {
+	top: 2px; width: 20px; height: 18px; right: 28px; overflow: hidden; float: right; display: block; position: absolute; z-index: 1; cursor: pointer;
+}
+#TB_closeAjaxWindow a span {
+	top: 2px; width: 20px; height: 18px; right: 28px; overflow: hidden; float: right; display: block; position: absolute; z-index: 1; cursor: pointer;
+}
+#TB_closeAjaxWindow a span {
+	background: url("../img/thickbox/close.png") no-repeat 0px 0px; top: 0px; right: 0px; position: absolute; z-index: 1;
+}
+#TB_closeAjaxWindow a:hover span {
+	background-position: 0px -18px;
+}
+*:first-child + html #TB_closeAjaxWindow a {
+	right: 28px;
+}
+* html #TB_closeAjaxWindow a span {
+	background: url("../img/thickbox/close.gif") no-repeat 0px 0px;
+}
+#TB_load {
+	margin: -6px 0px 0px -104px; left: 50%; top: 50%; width: 208px; height: 13px; display: none; position: fixed; z-index: 5000;
+}
+* html #TB_load {
+	position: absolute;
+}
+#TB_load span {
+	color: rgb(153, 153, 153); font-size: 70%; display: block;
+}
+#TB_HideSelect {
+	border: currentColor; left: 0px; top: 0px; width: 100%; height: 100%; filter: alpha(opacity=0); position: fixed; z-index: 99; opacity: 0; background-color: rgb(255, 255, 255); -moz-opacity: 0;
+}
+* html #TB_HideSelect {
+	position: absolute;
+}
+#TB_iframeContent {
+	border: currentColor; clear: both; margin-top: 1px; margin-bottom: -1px; _margin-bottom: 1px;
+}

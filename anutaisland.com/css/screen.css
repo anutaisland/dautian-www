@@ -1,0 +1,202 @@
+/*
+Name: Main Style Sheet
+Author: Ludek Cernocky; ludek@faceit.cz, www.faceit.cz
+Date: 4.8.2008
+Note: Don´t steal, just watch and learn. This CSS is copyrighted like all other stuff on Pojeta.cz domain ;)
+*/
+
+/* 1. Main
+---------------------- */
+* {margin:0; padding:0;}
+
+body {background: White; color:#F9F9F9; font-family: sans-serif; font-size: medium; text-align:center; height: 100%; /* for older browsers */}
+
+p {line-height: 140%; margin: 0.3em 0; padding: 0.1em 0 0.5em 0;}
+
+.hide, hr, h1 {display: none;}
+
+input, textarea {font-family: sans-serif; font-size: 100%;}
+
+fieldset {border: none;}
+
+/* links */
+a, a:link {color: White; outline: none;}
+a:hover {color: #B8D9D7;}
+
+/* headlines */
+h1 {font-size: 170.5%;}
+h2 {font-size: 146.2%;}
+h3 {font-size: 113.7%;}
+
+
+/* 2. Construction
+---------------------- */
+#main {font-size: 77%; margin: 0 auto; position: relative; width: 100%; text-align: left;}
+* html #main {font-size: 67%; fo\nt-size: 77%;}  /* IE 5 + IE 6 */
+.inside {margin: 0 auto; position: relative; width: 960px;}
+
+#services, #about-me, #contact {height: 1200px; position: relative;}
+
+#services {background: #78A8D9 url('../img/01-bg.jpg') repeat-x 0 0; z-index: 1002;}
+#about-me {background: #285A73 url('../img/02-bg.jpg') repeat-x 0 0; z-index: 1001;}
+#contact {background: #5B7C69 url('../img/03-bg.jpg') repeat-x 0 0; z-index: 1000;}
+
+h2, h2 span {position: relative; overflow: hidden;}
+
+/* 2.1 Construction - navigation links */
+a.nav {font-size: 100%;}
+#services a.nav, #services a.nav span, #about-me a.nav, #about-me a.nav span, #contact a.nav, #contact a.nav span {cursor: pointer; display: block; width: 93px; height: 26px; position: absolute; text-transform: uppercase;}
+
+#services a.nav, #services a.nav span {right: 54px; top: 890px; width: 77px; }
+#services a.nav.aboutme {right: 145px;}
+#services a.nav.aboutme span {background: url('../img/01-links-aboutme.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 100;}
+#services a.nav.aboutme:hover span {background-position: 0 -26px;}
+#services a.nav.contact span {background: url('../img/01-links-contact.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 100;}
+#services a.nav.contact:hover span {background-position: 0 -26px;}
+
+#about-me a.nav, #about-me a.nav span {right: 38px;}
+#about-me a.nav.services {right: 54px; top: 190px;}
+#about-me a.nav.contact {top: 923px;}
+#about-me a.nav.services span {background: url('../img/02-links-services.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 100;}
+#about-me a.nav.services:hover span {background-position: 0 -26px;}
+#about-me a.nav.contact span {background: url('../img/02-links-contact.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 100;}
+#about-me a.nav.contact:hover span {background-position: 0 -26px;}
+
+#contact a.nav, #contact a.nav span {right: 54px; top: 180px;}
+#contact a.nav.aboutme {right: 145px;}
+#contact a.nav.aboutme span {background: url('../img/03-links-aboutme.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 100;}
+#contact a.nav.aboutme:hover span {background-position: 0 -26px;}
+#contact a.nav.services span {background: url('../img/03-links-services.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 100;}
+#contact a.nav.services:hover span {background-position: 0 -26px;}
+
+span#co-nabizim {position: absolute; top: 5px; height: 1px;}
+span#o-mne {position: absolute; top: 160px; height: 1px;}
+span#kontakt {position: absolute; top: 160px; height: 1px;}
+
+
+/* 3. Services
+---------------------- */
+#services h2, #services h2 span {left: 2px; top: 292px; height: 379px; width: 417px;}
+#services h2 span {background: url('../img/01-nadpis.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 10;}
+
+#services ul {position: absolute; width: 253px; height: 275px; right: 52px; top: 520px; overflow: hidden; padding: 0 0 0 20px; z-index: 10;}
+#services ul li {color: #222; font-size: 110%; font-weight: bold; list-style-type: circle; padding: 0.5em 0; text-transform: uppercase;}
+#services ul em {background: url('../img/01-nabidka.jpg') no-repeat 0 0; width: 273px; height: 275px; position: absolute; z-index: 10; top: 0; left: 0px;}  /* if JS is ENABLED show the image */
+
+
+/* 4. About me
+---------------------- */
+#about-me .inside {background: transparent url('../img/02-podklad.jpg') no-repeat 50% 215px; height: 100%;}
+
+#about-me h2, #about-me h2 span {left: 58px; top: 238px; height: 124px; width: 285px;}
+#about-me h2 span {background: url('../img/02-nadpis.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 10;}
+
+#about-me p {background: #89ABCB url('../img/02-text.jpg') no-repeat 0 0; color: White; line-height: 130%; margin: 285px 0 0 67px; padding: 15px 17px 17px 17px; text-align: justify; height: 113px; width: 543px; font-size:125%}
+* html #about-me p {padding-bottom: 16px;}  /* IE 6 */
+
+/* 4.1 About me - your ideas */
+#about-me form {background: url('../img/02-napady.jpg') no-repeat 0 0; position: absolute; right: 58px; top: 280px; height: 595px; width: 236px;}
+
+#about-me dl {font-size: 89.3%; overflow: hidden; width: 175px; padding-left: 45px;}
+#about-me dl dt {height: 15px; overflow: hidden; margin-bottom: 5px;}
+#about-me dl dd {line-height: 95%; height: 53px; overflow: hidden; margin-bottom: 15px; position: relative;}
+#about-me dl dd em {cursor: help; font-style: normal;}
+#about-me dl dd span {position: absolute; bottom: 3px;}
+
+#about-me fieldset {margin-bottom: 20px;}
+#about-me fieldset dl {font-size: 100%; padding: 50px 0 0 34px; width: auto;}
+#about-me fieldset dl dd {margin-bottom: 3px; height: auto;}
+#about-me fieldset dl dt {height: auto; margin-bottom: 0;}
+#about-me fieldset dl dt label {font-size: 100%; letter-spacing: -1px; font-weight: bold; text-transform: uppercase;}
+#about-me fieldset dl input {background: url('../img/02-napady-input.jpg') no-repeat 0 0; border: 1px solid #785735; font-size: 90%; height: 15px; width: 178px;}
+#about-me fieldset dl input#navrh_otazka {width: 40px;}
+#about-me fieldset dl textarea {background: url('../img/02-napady-textarea.jpg') no-repeat 0 0; border: 1px solid #785735; font-size: 90%; height: 57px; width: 178px;}
+#about-me form p {background: none; font-size: 100%; margin: 0.2em 0; padding: 0.1em 0 0.5em 0; position: static; text-align: right; height: auto; width: auto;}  /* reset */
+#about-me form p button {background: url('../img/02-napady-button.jpg') no-repeat 0 0; border: none; cursor: pointer; height: 52px; width: 51px; padding: 52px 0 0; overflow: hidden; position: absolute; right: 21px; top: 239px;}
+#about-me form p button:hover {background-position: 0 -52px;}
+#about-me form p a {font-size: 90%; margin-right: 17px; position: relative; top: -5px;}
+
+/* little bit of hacking */
+body:last-child:not(:root:root) #about-me fieldset {margin-bottom: 30px;} /* targeting just Safari */
+* html #about-me fieldset dl dd {margin-bottom: 0px;}
+*:first-child+html #about-me fieldset dl dd {margin-bottom: 0px;}
+* html #about-me fieldset {margin-bottom: 24px;}
+*:first-child+html #about-me fieldset {margin-bottom: -10px;}
+* html #about-me p button {height: 52px;}
+*:first-child+html #about-me p button {height: 52px;}
+*:first-child+html #about-me form dl textarea {overflow: auto;}
+
+#about-me form h3, #about-me form legend {display: none;}
+
+/* About me in English :)*/
+#about-me div#english {display: none; text-align: justify;}
+#about-me div#english h3, #about-me div#english p {background: none; width: auto; height: auto; float: none; margin: 0; padding: 0; color: Black;}
+
+p.english, p.english a, p.english a span {cursor: pointer; display: block; font-size: 80%; float: right; position: fixed; right: -25px; top: -25px; z-index: 1003; height: 160px; width: 160px;}
+* html p.english, * html p.english a  {position:absolute; right: 0; top: -15px;}  /* Bad for users of IE 6 */
+p.english a span {background: url('../img/english.png') no-repeat 0 0; position: absolute; top: 0; right: 0; z-index: 500;}
+p.english a:hover span {background-position: 0 -160px;}
+
+/* 5. Contact
+---------------------- */
+#contact .inside {background: transparent url('../img/03-paprsky.jpg') no-repeat 0 147px; height: 100%;}
+
+#contact h2, #contact h2 span {left: 67px; top: 226px; height: 245px; width: 314px;}
+#contact h2 span {background: url('../img/03-nadpis.jpg') no-repeat 0 0; position: absolute; top: 0; left: 0; z-index: 10;}
+
+#contact address {color: #CCC; font-size: 110%; font-style: normal; font-weight: bold; line-height: 280%;text-transform: uppercase; position: absolute; width: 248px; height: 173px; right: 52px; top: 601px; padding: 104px 0 0 25px; z-index: 10;}
+#contact address em {background: url('../img/03-kontakt.jpg') no-repeat 0 0; width: 273px; height: 275px; position: absolute; z-index: 10; top: 0; left: 0px;}  /* if JS is ENABLED show the image */
+#contact address a, #contact address a span {cursor: pointer; font-size: 90%; position: absolute; top: 142px; left: 84px; width: 123px; height: 29px; overflow: hidden; z-index: 100;}
+#contact address a span {background:url('../img/03-email.jpg') no-repeat 0 0; display: block; position: absolute;top:0; left:0;}
+#contact address a:hover span {background-position: 0 -29px;}
+
+/* 6. Footer
+---------------------- */
+#footer {background: transparent url('../img/03-dno.jpg') no-repeat 50% 0; color: #B8D9D7; margin: 0 auto; text-align: center; position: absolute; bottom: 0; height: 195px; width: 100%; z-index: 2000;}
+
+#footer p, #footer blockquote {position: relative; width: 960px;left:30px; margin: -25px auto 0 auto; text-align: left;} 
+
+#footer p {padding-top: 185px;}
+#footer p small {padding-left:70px; font-size:100%}
+#footer p a, #footer p span {display: none;}
+
+#footer blockquote {text-align: right; margin: -21px auto 0 auto;left:-20px;}
+#footer blockquote em, #footer blockquote em span {font-size: 102%; position: absolute; top: 0px; right: 120px; width: 98px; height: 17px; overflow: hidden; z-index: 100;}
+#footer blockquote em span {background:url('../img/03-copy.jpg') no-repeat 0 0; display: block; position: absolute; top:0; left:0;}
+#footer blockquote span {display: none;}
+#footer blockquote a, #footer blockquote a span {cursor: pointer; font-size: 100%; position: absolute; top: -8px; right: 80px; width: 35px; height: 33px; overflow: hidden; z-index: 100;}
+#footer blockquote a span {background:url('../img/03-faceit.jpg') no-repeat 0 0; display: block; position: absolute;top:0; left:0;}
+#footer blockquote a:hover span {background-position: 0 -33px;}
+
+/* 7. Special graphics
+---------------------- */
+#header p.we-are-sorry {background: url('../img/sticker-pojeta.png') no-repeat 0 0; position: absolute; left: 30px; top: 30px; overflow: hidden; width: 181px; height: 160px; text-align: left; text-indent: -9999px;}
+a.faceit, #contact address a.faceit {display: block; position: absolute; width: 85px; height: 85px; top: 0px; right: 0px; z-index: 10; text-decoration: none;}
+#contact address a.faceit {left: 184px; top: 0px;}
+
+div.special blockquote {cursor: help; display: block; position: absolute; z-index: 1000;}
+
+div.special blockquote em {background: url('../img/hover.png') no-repeat 0 0; color: #222; display: none; font-size: 89.3%; line-height: 80%; font-style: normal; height: 86px; padding: 12px 5px 0 20px; width: 136px; position: absolute; top: -90px; left: -20px; font-size:100%}
+div.special blockquote em strong {display: block; margin: 0; padding: 2px 0 0 0;}
+div.special blockquote em span {line-height: 140%;}
+
+div.special blockquote.raketka {background: url('../img/raketka-pojeta.jpg') no-repeat 0 0; height: 240px; width: 514px; top: 52px; left: 61px;}
+div.special blockquote.raketka em {top: -30px; left: 130px;}
+
+div.special blockquote.ufo {background: url('../img/ufo-potocky.jpg') no-repeat 0 0; height: 388px; width: 462px; top: 647px; left: 205px;}
+div.special blockquote.ufo em {top: -90px; left: 140px;}
+
+div.special blockquote.knez {background: url('../img/knez-tvrdek.jpg') no-repeat 0 0; height: 294px; width: 216px; top: 970px; right: 0px; z-index:1002;}
+div.special blockquote.opicak {background: url('../img/opicak-spilka.jpg') no-repeat 0 0; height: 89px; width: 146px; top: 69px; left: 382px;}
+div.special blockquote.opicak em {top: -55px; left: -100px; height: 65px;}
+
+div.special blockquote.sochy {background: url('../img/sochy-dorazilova.jpg') no-repeat 0 0; height: 109px; width: 97px; top: 612px; left: 153px;}
+div.special blockquote.jelen {background: url('../img/jelen-cernocky.jpg') no-repeat 0 0; height: 102px; width: 130px; top: 803px; left: 523px;}
+
+div.special blockquote.ponorka {background: url('../img/ponorka-bulin.jpg') no-repeat 0 0; height: 407px; width: 288px; top: 373px; left: 322px;}
+div.special blockquote.ponorka em {top: -40px; left: 70px; }
+
+div.special blockquote.potapecka {background: url('../img/potapecka-zatloukal.jpg') no-repeat 0 0; height: 225px; width: 289px; top: 273px; right: 8px;}
+div.special blockquote.potapecka em {top: -30px; left: 120px;}   
+
+.inside div.sorry-no-time {background: url('../img/sticker-pojeta.png') no-repeat 0 0; position: fixed; left: 15px; top: 15px; overflow: hidden; width: 181px; height: 175px; text-align: left; text-indent: -9999px;z-index: 12001; }

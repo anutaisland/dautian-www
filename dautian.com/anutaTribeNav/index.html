@@ -1,0 +1,158 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="阿努塔岛" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<!--全局CSS样式开始-->
+<link rel="stylesheet" href="Assets/Css/reset.css" />
+<link rel="stylesheet" type="text/css" href="Assets/Css/common.css" />
+
+<!--图标字体-->
+<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1414637576_801088.css"/>
+
+<!--全局CSS样式结束-->
+<title>阿努塔岛，你我的城市生活驿站！</title>
+<!--页面CSS样式开始-->
+<link rel="stylesheet" type="text/css" href="Assets/Css/page_index.css"/>
+<!--全局JS包含文件开始-->
+<script type="text/javascript" src="Assets/Js/jquery.min.js"></script>
+<script type="text/javascript" src="Assets/Js/common.js"></script>
+</head>
+<body>
+<div id="wx_logo" style="margin:0 auto;display:none;">
+<img src="http://www.dautian.com/images/anuta_wx.jpg" />
+</div>
+	<!--头部开始-->
+	<div class="space_hx">&nbsp;</div>
+	<!--头部结束-->
+	<!--主体开始-->
+	<div class="main">
+		<div class="main_case">
+			<h1 class="mc_title" id="001" name="001">
+				阿努塔岛
+				<span class="title_icon">
+					<i class="iconfont icon-xiangshang"></i>	
+				</span>
+			</h1>
+			<div class="mc_list">
+				<a href="http://www.dautian.com/anutaisland/anuta/weixin/serviceList/b3ef061f2f054fcf9e3a399f330b33f6">
+					<dl class="clearfix">
+						<dt>
+							<img src="Assets/Images/1.jpg" />	
+						</dt>
+						<dd>阿努塔岛游人码头<br>照片墙，八卦吹水，阿岛各种主题群。。。</dd>
+						<dd class="mc_icon">
+							<i class="iconfont icon-xiangyou"></i>
+						</dd>
+					</dl>
+				</a>
+				<a href="http://www.dautian.com/anutaisland/anuta/weixin/serviceList/c60e6c3888aa4d7b814f20e521971499">
+					<dl class="clearfix">
+						<dt>
+							<img src="Assets/Images/2.jpg" />	
+						</dt>
+						<dd>八爪鱼商务中心<br>粤商领袖圆桌会、老李的软件工坊、吾印良品、淘麻豆、猎友计划、拉图酒庄、金融产品超市
+						</dd>
+						<dd class="mc_icon">
+							<i class="iconfont icon-xiangyou"></i>
+						</dd>
+					</dl>
+				</a>
+				
+			</div>
+		</div>
+		<div class="main_case">
+			<h1 class="mc_title" id="003" name="003">
+				广东
+				<span class="title_icon">
+					<i class="iconfont icon-xiangshang"></i>				</span>			</h1>
+			<div class="mc_list">
+				<a href="http://www.dautian.com/anutaisland/anuta/weixin/serviceList/528ed0ec07224994a92cd64d416e6e38">
+					<dl class="clearfix">
+						<dt>
+							<img src="Assets/Images/4.jpg" />	
+						</dt>
+						<dd>
+							茂名站<br>茂名资讯、田园到餐桌、茂名特产
+						</dd>
+						<dd class="mc_icon">
+							<i class="iconfont icon-xiangyou"></i>
+						</dd>
+					</dl>
+				</a>
+				
+			</div>
+		</div>
+		<div class="main_case">
+			<h1 class="mc_title" id="003" name="003">
+				山西
+				<span class="title_icon">
+					<i class="iconfont icon-xiangshang"></i>				</span>			</h1>
+			<div class="mc_list">
+				<a href="http://www.dautian.com/anutaisland/anuta/weixin/serviceList/6bdf27938a174d728d84e1295112d95f">
+					<dl class="clearfix">
+						<dt>
+							<img src="Assets/Images/6.jpg" />	
+						</dt>
+						<dd>
+							太原站<br>太原资讯、田园到餐桌、太原特产
+						</dd>
+						<dd class="mc_icon">
+							<i class="iconfont icon-xiangyou"></i>
+						</dd>
+					</dl>
+				</a>
+				
+			</div>
+		</div>
+</div>
+	<!--主体结束-->
+	<!--返回顶部开始-->
+	<div class="backtop" id="backtop">
+		<a href="javascript:window.scrollTo(0,0)">
+			<i class="iconfont icon-xiangshang"></i>
+		</a>
+	</div>
+	<!--返回顶部结束-->
+	
+</body>
+<script type="text/javascript">
+$(function(){
+	
+	//栏目显示隐藏
+	$('.mc_title').on('click',function(){
+		var fontIcon = $(this).children('.title_icon').children('i').attr('class');/*获取图标i的class*/
+		var icon = $(this).children('.title_icon').children('i');/*获取图标i标签*/
+		//上下箭头切换
+		if(fontIcon=='iconfont icon-xiangshang'){
+			icon.attr('class','iconfont icon-xiangxia');
+		}else if(fontIcon=='iconfont icon-xiangxia'){
+			icon.attr('class','iconfont icon-xiangshang');
+		};
+		//内容切换
+		$(this).next('div.mc_list').toggle(500);
+	});
+	
+	//右导航显示隐藏
+	$('#order_nav').on('click',function(){
+		var obj = $(this);
+		if( obj.hasClass('menu_open')){
+			obj.removeClass('menu_open');
+			$('.nav_list').removeClass('is-visible');
+		}else{
+			$('.nav_list').addClass('is-visible');
+			obj.addClass('menu_open');
+		}	
+	});
+	
+});
+</script>
+</html>

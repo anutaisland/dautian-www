@@ -1,0 +1,10 @@
+青岛啤酒测试消息1|老李1|青岛啤酒节要开了1|1周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/laoli@anutaisland
+青岛啤酒测试消息2|老李2|青岛啤酒节要开了2|2周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/mkfrz@anutaisland
+青岛啤酒测试消息3|老李3|青岛啤酒节要开了3|3周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/dlzm@anutaisland
+青岛啤酒测试消息4|老李4|青岛啤酒节要开了4|4周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/about@anutaisland
+青岛啤酒测试消息5|老李5|青岛啤酒节要开了5|5周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/mkfrz@anutaisland
+青岛啤酒测试消息6|老李6|青岛啤酒节要开了6|6周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/dlzm@anutaisland
+青岛啤酒测试消息7|老李7|青岛啤酒节要开了7|7周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/laoli@anutaisland
+青岛啤酒测试消息8|老李8|青岛啤酒节要开了8|8周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/dlzm@anutaisland
+青岛啤酒测试消息9|老李9|青岛啤酒节要开了9|9周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/laoli@anutaisland
+青岛啤酒测试消息10|老李10|青岛啤酒节要开了10|10周末促销，原价268的青岛原浆啤酒，现促销价258元，欢迎品尝！|http://dautian.com/anutaisland/url/about@anutaisland

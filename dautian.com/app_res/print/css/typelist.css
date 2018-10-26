@@ -1,0 +1,226 @@
+html {
+	margin: 0px; padding: 0px; color: rgb(34, 34, 34); font-family: Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif; text-decoration: none;
+}
+body {
+	margin: 0px; padding: 0px; color: rgb(34, 34, 34); font-family: Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif; text-decoration: none;
+}
+body > .tips {
+	padding: 20px; left: 50%; top: 50%; width: 200px; text-align: center; display: none; position: fixed; z-index: 100;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+div {
+	margin: 0px; padding: 0px;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dt {
+	margin: 0px; padding: 0px;
+}
+dd {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+ol {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+h4 {
+	margin: 0px; padding: 0px;
+}
+h5 {
+	margin: 0px; padding: 0px;
+}
+h6 {
+	margin: 0px; padding: 0px;
+}
+pre {
+	margin: 0px; padding: 0px;
+}
+code {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+fieldset {
+	margin: 0px; padding: 0px;
+}
+legend {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+blockquote {
+	margin: 0px; padding: 0px;
+}
+th {
+	margin: 0px; padding: 0px;
+}
+td {
+	margin: 0px; padding: 0px;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+fieldset {
+	border: 0px currentColor;
+}
+img {
+	border: 0px currentColor;
+}
+address {
+	font-style: normal; font-weight: normal;
+}
+caption {
+	font-style: normal; font-weight: normal;
+}
+cite {
+	font-style: normal; font-weight: normal;
+}
+code {
+	font-style: normal; font-weight: normal;
+}
+dfn {
+	font-style: normal; font-weight: normal;
+}
+em {
+	font-style: normal; font-weight: normal;
+}
+th {
+	font-style: normal; font-weight: normal;
+}
+var {
+	font-style: normal; font-weight: normal;
+}
+ol {
+	list-style: none; margin: 0px; padding: 0px;
+}
+ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+caption {
+	text-align: left;
+}
+th {
+	text-align: left;
+}
+h1 {
+	font-size: 100%; font-weight: normal;
+}
+h2 {
+	font-size: 100%; font-weight: normal;
+}
+h3 {
+	font-size: 100%; font-weight: normal;
+}
+h4 {
+	font-size: 100%; font-weight: normal;
+}
+h5 {
+	font-size: 100%; font-weight: normal;
+}
+h6 {
+	font-size: 100%; font-weight: normal;
+}
+a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+q::before {
+	content: "";
+}
+q::after {
+	content: "";
+}
+abbr {
+	border: 0px currentColor; font-variant: normal;
+}
+acronym {
+	border: 0px currentColor; font-variant: normal;
+}
+sup {
+	vertical-align: text-top;
+}
+sub {
+	vertical-align: text-bottom;
+}
+input {
+	font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+textarea {
+	font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+select {
+	font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+input {
+	
+}
+textarea {
+	
+}
+select {
+	
+}
+legend {
+	color: rgb(0, 0, 0);
+}
+
+#cate1 {
+	-ms-overflow-x: hidden; background-color: rgb(240, 240, 240);
+}
+#cate1 .mainmenu {
+	margin: 0px auto; padding: 5px; width: 310px; display: block;
+}
+#cate1 .mainmenu li {
+	width: 50%; margin-right: -0.5px; float: left; display: block; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none;
+}
+#cate1 .mainmenu li .menubtn {
+	margin: 5px; border-radius: 5px; color: rgb(0, 0, 0); text-decoration: none; display: block; box-shadow: 0px 1px 3px #bebebe; background-color: rgb(255, 255, 255); -moz-box-shadow: 0 1px 3px #bebebe; -webkit-box-shadow: 0 1px 3px #bebebe;
+}
+#cate1 .mainmenu li .menubtn:hover {
+	background-color: rgb(245, 245, 245);
+}
+#cate1 .mainmenu li a {
+	padding: 0px; color: rgb(0, 0, 0); font-size: 14px; text-decoration: none; display: block; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none;
+}
+#cate1 .mainmenu li .menubtn .menumesg {
+	padding: 0px;
+}
+#cate1 .mainmenu li .menubtn .menuimg {
+	border-radius: 5px 5px 0px 0px; height: 106px; overflow: hidden; background-color: rgb(245, 245, 245);
+}
+#cate1 .mainmenu li div img {
+	border-radius: 5px 5px 0px 0px; border: 0px currentColor; width: 100%;
+}
+#cate1 .mainmenu li .menutitle {
+	padding: 5px; text-align: center; color: rgb(0, 0, 0); overflow: hidden; text-decoration: none; white-space: nowrap; -ms-text-overflow: ellipsis;
+}

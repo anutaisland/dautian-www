@@ -1,0 +1,102 @@
+* {
+	margin: 0px; padding: 0px;
+}
+body {
+	color: rgb(51, 52, 52); font-family: "Microsoft Yahei"; background-color: rgb(238, 238, 238);
+}
+.contanier {
+	margin: 0px auto; padding: 18px 5px 15px; width: 310px;
+}
+.list {
+	padding-bottom: 24px;
+}
+.list .group {
+	top: 15px; width: 310px; height: 160px; overflow: hidden; position: absolute; z-index: -1; border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+.list .group img {
+	width: 310px; height: 160px;
+}
+.list .info {
+	height: 160px; color: white; border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+.list .info .title {
+	padding-top: 30px; padding-left: 18px; font-size: 19px;
+}
+.list .info .sub-title {
+	height: 34px; padding-top: 20px; padding-left: 18px; font-size: 14px; box-sizing: border-box;
+}
+.list .info .place {
+	height: 18px; padding-top: 3px; padding-left: 18px; font-size: 14px; box-sizing: border-box;
+}
+.list .info .header {
+	float: right;
+}
+.list .info .header .header-1 {
+	padding-right: 5px; font-size: 14px; display: inline-block;
+}
+.list .info .header .header-2 {
+	top: 13px; padding-right: 14px; display: inline-block; position: relative;
+}
+.list .info .header .header-2 img {
+	border: 1px solid white; border-image: none; width: 37px; height: 37px;
+}
+.list .canvas {
+	top: 15px; width: 310px; height: 160px; position: absolute; z-index: -1; opacity: 0.2; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: black;
+}
+.list .intro {
+	color: rgb(140, 140, 140); font-size: 12px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: white;
+}
+.list .intro .seat {
+	color: rgb(246, 91, 102); padding-top: 18px;
+}
+.list .intro .seat .place {
+	padding-bottom: 3px; padding-left: 18px; font-size: 14px;
+}
+.list .intro .seat .place span {
+	padding: 0px 5px; font-size: 18px;
+}
+.list .intro .seat .place img {
+	width: 10px; padding-right: 14px;
+}
+.list .intro .seat .price {
+	padding-right: 5px; padding-bottom: 5px; padding-left: 16px; font-size: 18px;
+}
+.list .intro .seat .price img {
+	top: 1px; width: 15px; padding-right: 7px; position: relative;
+}
+.list .intro .seat .price .female {
+	padding-left: 20px; font-size: 14px;
+}
+.list .intro .seat .price .female span {
+	font-size: 18px;
+}
+.list .intro .seat .price .male {
+	font-size: 14px;
+}
+.list .intro .location {
+	padding-bottom: 5px; padding-left: 18px;
+}
+.list .intro .location img {
+	top: 1px; width: 10px; position: relative;
+}
+.list .intro .location span {
+	width: 260px; padding-left: 10px; font-size: 14px; display: inline-block;
+}
+.list .intro .time {
+	padding-bottom: 5px; padding-left: 18px;font-size: 14px;
+}
+.list .intro .time img {
+	width: 10px;
+}
+.list .intro .time span {
+	padding-left: 10px;
+}
+.list .intro .tag {
+	padding-bottom: 12px; padding-top: 5px; padding-left: 0px; text-align: center;
+}
+.list .intro .tag img {
+	width: 10px;
+}
+.list .intro .tag span {
+	padding-left: 10px;
+}

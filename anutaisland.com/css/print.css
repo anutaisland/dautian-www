@@ -1,0 +1,99 @@
+* {
+	margin: 0px 0px 0px 1em; padding: 0px;
+}
+body {
+	background: white; margin: 1em 1em 1em 0em; color: black; font-family: sans-serif; font-size: 11pt;
+}
+div.special {
+	display: none;
+}
+hr {
+	display: none;
+}
+fieldset {
+	display: none;
+}
+#footer {
+	display: none;
+}
+form a {
+	display: none;
+}
+.nav {
+	display: none;
+}
+.english {
+	display: none;
+}
+.faceit {
+	display: none;
+}
+div {
+	margin: 0px;
+}
+strong {
+	margin: 0px;
+}
+h1 {
+	margin: 0px 0px 1em;
+}
+h2 {
+	margin: 2em 0px 0.7em; padding: 0px 0px 0.1em; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+h3 {
+	margin: 0px;
+}
+a {
+	margin: 0px;
+}
+address {
+	font-style: normal;
+}
+em {
+	font-style: normal;
+}
+form {
+	margin: 2em 0px 0px;
+}
+p {
+	margin: 0.5em 0px 0px; text-align: justify; line-height: 140%;
+}
+ul li {
+	padding: 0.3em;
+}
+dl {
+	margin: 0px;
+}
+dt strong {
+	margin: 0px;
+}
+dd em {
+	margin: 0px;
+}
+dd span {
+	margin: 0px;
+}
+dd span strong {
+	margin: 0px;
+}
+dl {
+	margin-top: 0.5em;
+}
+dt {
+	margin: 0.5em 0px 0.2em;
+}
+dd {
+	margin: 0px 0px 1.5em;
+}
+dd em {
+	margin: 0px;
+}
+dd span {
+	padding: 0.2em 0px 0px; display: block;
+}
+#english {
+	margin: 2em 0px;
+}
+address {
+	margin: 0px; line-height: 200%;
+}

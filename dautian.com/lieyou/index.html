@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<title>从现在开始，每周认识一位新朋友</title>
+
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<link rel="stylesheet" type="text/css" href="css/adv.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+</head>
+<body>
+<div id="wx_logo" style="margin:0 auto;display:none;">
+<img src="http://www.dautian.com/images/lieyou_wx.jpg" />
+</div>
+<style>
+.u-arrow{width:23px;height:auto;margin-left:-12px;position:absolute;}
+</style>
+
+<div id="fullpage">
+	<div id="voice" style="display:none;">
+		<!--<audio src="css/Bruises.mp3" autoplay="true" loop id="audio"></audio>-->
+		<div id="music"> 
+			<div id="m_main"><img src="images/music.png" /></div>
+			<span id="m1">&#xe600;</span> <span id="m2">&#xe601;</span> <span id="m3">&#xe600;</span> <span id="m5">&#xe601;</span> <span id="m6">&#xe600;</span> <span id="m7">&#xe601;</span>
+		</div>
+	</div>
+	<div class="section p2">
+		<img src="images/text2a.png" class="a" />
+		<img src="images/text2b.png" class="b" />
+		<div class="u-arrow" id="up"><img src="images/arrow1.png"/></div>
+	</div>
+	<div class="section p3">
+	<a href="contact.html" class="ico"><span class="a1"></span><span class="a2"></span></a>
+		<div class="text">
+			<img src="images/text3.png" />
+			
+		</div>
+		<div class="u-arrow" id="up"><img src="images/arrow1.png"/></div>
+	</div>
+	<div class="section p4">
+	<a href="contact.html" class="ico"><span class="a1"></span><span class="a2"></span></a>
+		<div class="text">
+			<img src="images/text4.png" />
+			
+		</div>
+		<div class="u-arrow" id="up"><img src="images/arrow1.png"/></div>
+	</div>
+	<div class="section p5">
+	<a href="contact.html" class="ico"><span class="a1"></span><span class="a2"></span></a>
+		<div class="text">
+			<img src="images/text5.png" />
+		</div>
+		<div class="u-arrow" id="up"><img src="images/arrow1.png"/></div>
+	</div>
+	<div class="section p6">
+	<a href="contact.html" class="ico"><span class="a1"></span><span class="a2"></span></a>
+		<div class="text">
+			<img src="images/text6.png" />
+		</div>
+		<div class="u-arrow" id="up"><img src="images/arrow1.png"/></div>
+	</div>
+	<div class="section p7">
+	<a href="contact.html" class="ico"><span class="a1"></span><span class="a2"></span></a>
+		<div class="text">
+			<img src="images/text7.png" />
+		</div>
+		<div class="u-arrow" id="up"><img src="images/arrow1.png"/></div>
+	</div>
+	<div class="section p8">
+		<a href="contact.html"><img src="images/text8a.png" class="a" /></a>
+		<a href="contact.html"><img src="images/text8b.png" class="b" /></a>
+		<div class="u-arrow" id="up"><img src="images/arrow1.png"/></div>
+	</div>
+	<div class="section p9">
+		<div class="bg"></div>
+		<img src="images/text9.png" class="a" />
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function actions(i){
+	
+}
+
+$(document).ready(function () {
+	$('#fullpage').fullpage({
+		//anchors: ['firstPage', 'secondPage', '3rdPage'],
+		scrollingSpeed:500,
+		easing:'',
+		sectionsColor: ['', '', ''],
+		navigation:0,
+		slidesNavigation: true,
+		loopHorizontal:0,
+		afterRender: function (anchorLink, index, slideAnchor, slideIndex) {
+			//load
+		},
+		afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+			//slide
+		},
+		afterLoad: function (anchorLink, index) {
+			//page
+		}
+	});
+
+	
+	
+});
+</script>
+</body>
+</html>

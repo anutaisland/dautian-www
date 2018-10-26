@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+
+		<meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title> 当前作业
+		</title>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			//通过config接口注入权限验证配置
+			//			wx.config({
+			//			    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			//			    appId: '', // 必填，公众号的唯一标识
+			//			    timestamp: '', // 必填，生成签名的时间戳
+			//			    nonceStr: '', // 必填，生成签名的随机串
+			//			    signature: '',// 必填，签名
+			//			    jsApiList: [] // 必填，需要使用的JS接口列表
+			//			});
+			//			//通过ready接口处理成功验证
+			//			wx.ready(function(){
+			//				// config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后
+			//			});
+		</script>
+
+		<link rel="stylesheet" href="jquery-weui/css/jquery-weui.css">
+		<link rel="stylesheet" href="jquery-weui/lib/weui.min.css">
+		<link rel="stylesheet" href="js/dropload.css">
+		<link rel="stylesheet" href="css/extend.css" />
+		<link rel="stylesheet" href="css/ygaq.css">
+		
+		<script type="text/javascript" src="jquery-weui/lib/jquery.js"></script>
+		<script type="text/javascript" src="js/dropload.min.js"></script>
+		<script type="text/javascript" src="jquery-weui/lib/fastclick.js"></script>
+		<script type="text/javascript" src="jquery-weui/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="jquery-weui/js/city-picker.min.js"></script>
+		<style>
+			.dropload-down {
+				height: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--
+        	作者：qjiancong@qq.com
+        	时间：2016-09-28
+        	描述：当前作业列表
+        -->
+		<!--  作业列表 -->
+		<div class="weui_toast weui_loading_toast weui_toast_visible">
+			<div class="weui_loading">
+				<div class="weui_loading_leaf weui_loading_leaf_0"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_1"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_2"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_3"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_4"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_5"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_6"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_7"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_8"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_9"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_10"></div>
+				<div class="weui_loading_leaf weui_loading_leaf_11"></div>
+			</div>
+			<p class="weui_toast_content">数据加载中</p>
+		</div>
+
+		<div class="assets outer">
+
+			<div class="typebox clearfix">
+
+				<li class="slide"><b>风险等级</b><span></span></li>
+
+				<li class="slide"><b>管理部门  </b><span></span></li>
+
+				<li class="slide"><b>施工类型</b><span></span></li>
+
+				<li class="moreslide"><b>更多</b><span></span></li>
+
+			</div>
+
+			<div class="more">
+
+				<div class="moreinner">
+
+					<div class="sortbox">
+
+						<h2>排序</h2>
+
+						<ul class="clearfix">
+
+							<li class="" value="or1">时间由远到近</li>
+
+							<li class="" value="or2">时间由近到远</li>
+
+							<li class="" value="or3">风险由大到小</li>
+
+							<li class="" value="or4">风险由小到大</li>
+
+						</ul>
+
+					</div>
+					<h2>风险等级</h2>
+
+					<ul class="clearfix multi">
+
+						<li value="r1">一级 </li>
+
+						<li value="r2">二级 </li>
+						<li class="active" value="r3">三级 </li>
+						<li value="r4">四级 </li>
+						<li value="r5">五级 </li>
+					</ul>
+
+					<h2>项目管理单位/部门</h2>
+
+					<ul class="clearfix multi">
+						<li class="" value="dp1">基建部</li>
+						<li class="" value="dp2">系统运行部</li>
+						<li class="" value="dp3">输电管理所</li>
+						<li class="" value="dp4">变电管理所</li>
+						<li class="" value="dp5">计量中心</li>
+						<li class="" value="dp6">云城供电局</li>
+						<li class="" value="dp7">云安供电局</li>
+						<li class="" value="dp8">新兴供电局</li>
+						<li class="" value="dp9">罗定供电局</li>
+						<li class="" value="dp10">郁南供电局</li>
+					</ul>
+
+					<h2>施工类型</h2>
+
+					<ul class="clearfix multi">
+						<li class="" value="tp1">大修技改</li>
+						<li class="" value="tp2">基建</li>
+						<li class="" value="tp3">检修试验定检维护</li>
+						<li class="" value="tp4">操作</li>
+						<li class="" value="tp5">其他</li>
+					</ul>
+
+					<h2>是否需要停电</h2>
+
+					<ul class="clearfix">
+
+						<li class="" value="el1">是</li>
+
+						<li class="active" value="el2">否</li>
+
+					</ul>
+
+					<h2>专业</h2>
+
+					<ul class="clearfix multi">
+						<li class="" value="mj1">输电</li>
+						<li class="" value="mj2">变电</li>
+						<li class="" value="mj3">配电</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="bts clearfix">
+
+				<a href="/search?k=" class="clear">清空条件</a>
+
+				<a href="javascript:void(0)" class="sure">确认</a>
+
+			</div>
+
+			<div class="conditions">
+				<ul>
+					<li class="activecolor">
+						<a href="">风险等级</a>
+					</li>
+					<li class="">
+						<a href="">一级风险</a>
+					</li>
+					<li class="">
+						<a href="">二级风险</a>
+					</li>
+					<li class="">
+						<a href="">三级风险</a>
+					</li>
+					<li class="">
+						<a href="">四级风险</a>
+					</li>
+					<li class="">
+						<a href="">五级风险</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="activecolor">
+						<a href="">管理部门</a>
+					</li>
+					<li class="">
+						<a href="">基建部</a>
+					</li>
+					<li class="">
+						<a href="">系统运行部</a>
+					</li>
+					<li class="">
+						<a href="">输电管理所</a>
+					</li>
+					<li class="">
+						<a href="">变电管理所</a>
+					</li>
+					<li class="">
+						<a href="">计量中心</a>
+					</li>
+					<li class="">
+						<a href="">云城供电局</a>
+					</li>
+					<li class="">
+						<a href="">云安供电局</a>
+					</li>
+					<li class="">
+						<a href="">新兴供电局</a>
+					</li>
+					<li class="">
+						<a href="">罗定供电局</a>
+					</li>
+					<li class="">
+						<a href="">郁南供电局</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="activecolor">
+						<a href="">施工类型</a>
+					</li>
+					<li class="">
+						<a href="">大修技改</a>
+					</li>
+					<li class="">
+						<a href="">基建</a>
+					</li>
+					<li class="">
+						<a href="">检修试验定检维护</a>
+					</li>
+					<li class="">
+						<a href="">操作</a>
+					</li>
+					<li class="">
+						<a href="">其他</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+			<div style="height: 41px"></div>
+
+			<div class="inner">
+
+				<div class="content entrust_content">
+
+					<ul class="list-container">
+						<li>
+							<a class="clearfix" href="detail.html">
+								<div class="assetimg">
+									<img src="images/default_icon.png">
+								</div>
+								<div class="detailinfos">
+									<h1 class="titlecolor">大修技改</h1>
+									<span class="process">进行中</span>
+									<h2 class="inputcolor">110kV安古站直流系统及蓄电池改造</h2>
+									<p>
+										<span>Ⅰ</span><span>Ⅱ</span><span class="now_show">Ⅲ</span><span>Ⅳ</span><span>Ⅴ</span>
+
+									</p>
+								</div>
+								<div class="item_right_btn">
+									<a href="javascript:;" id='show-actions' class="weui_btn weui_btn_mini weui_btn_primary">操作</a>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="detail.html">
+								<div class="assetimg">
+									<img src="images/default_icon.png">
+								</div>
+								<div class="detailinfos">
+									<h1 class="titlecolor">大修技改</h1>
+									<span class="process">进行中</span>
+									<h2 class="inputcolor">110kV安古站直流系统及蓄电池改造</h2>
+									<p>
+										<span>Ⅰ</span><span>Ⅱ</span><span class="now_show">Ⅲ</span><span>Ⅳ</span><span>Ⅴ</span>
+
+									</p>
+								</div>
+								<div class="item_right_btn">
+									<a href="javascript:;" id='show-actions' class="weui_btn weui_btn_mini weui_btn_primary">操作</a>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="detail.html">
+								<div class="assetimg">
+									<img src="images/default_icon.png">
+								</div>
+								<div class="detailinfos">
+									<h1 class="titlecolor">大修技改</h1>
+									<span class="process">进行中</span>
+									<h2 class="inputcolor">110kV安古站直流系统及蓄电池改造</h2>
+									<p>
+										<span>Ⅰ</span><span>Ⅱ</span><span class="now_show">Ⅲ</span><span>Ⅳ</span><span>Ⅴ</span>
+
+									</p>
+								</div>
+								<div class="item_right_btn">
+									<a href="javascript:;" id='show-actions' class="weui_btn weui_btn_mini weui_btn_primary">操作</a>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="detail.html">
+								<div class="assetimg">
+									<img src="images/default_icon.png">
+								</div>
+								<div class="detailinfos">
+									<h1 class="titlecolor">大修技改</h1>
+									<span class="process">进行中</span>
+									<h2 class="inputcolor">110kV安古站直流系统及蓄电池改造</h2>
+									<p>
+										<span>Ⅰ</span><span>Ⅱ</span><span class="now_show">Ⅲ</span><span>Ⅳ</span><span>Ⅴ</span>
+
+									</p>
+								</div>
+								<div class="item_right_btn">
+									<a href="javascript:;" id='show-actions' class="weui_btn weui_btn_mini weui_btn_primary">操作</a>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="detail.html">
+								<div class="assetimg">
+									<img src="images/default_icon.png">
+								</div>
+								<div class="detailinfos">
+									<h1 class="titlecolor">大修技改</h1>
+									<span class="process">进行中</span>
+									<h2 class="inputcolor">110kV安古站直流系统及蓄电池改造</h2>
+									<p>
+										<span>Ⅰ</span><span>Ⅱ</span><span class="now_show">Ⅲ</span><span>Ⅳ</span><span>Ⅴ</span>
+
+									</p>
+								</div>
+								<div class="item_right_btn">
+									<a href="javascript:;" id='show-actions' class="weui_btn weui_btn_mini weui_btn_primary">操作</a>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="detail.html">
+								<div class="assetimg">
+									<img src="images/default_icon.png">
+								</div>
+								<div class="detailinfos">
+									<h1 class="titlecolor">大修技改</h1>
+									<span class="process">进行中</span>
+									<h2 class="inputcolor">110kV安古站直流系统及蓄电池改造</h2>
+									<p>
+										<span>Ⅰ</span><span>Ⅱ</span><span class="now_show">Ⅲ</span><span>Ⅳ</span><span>Ⅴ</span>
+
+									</p>
+								</div>
+								<div class="item_right_btn">
+									<a href="javascript:;" id='show-actions' class="weui_btn weui_btn_mini weui_btn_primary">操作</a>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="detail.html">
+								<div class="assetimg">
+									<img src="images/default_icon.png">
+								</div>
+								<div class="detailinfos">
+									<h1 class="titlecolor">大修技改</h1>
+									<span class="process">进行中</span>
+									<h2 class="inputcolor">110kV安古站直流系统及蓄电池改造</h2>
+									<p>
+										<span>Ⅰ</span><span>Ⅱ</span><span class="now_show">Ⅲ</span><span>Ⅳ</span><span>Ⅴ</span>
+
+									</p>
+								</div>
+								<div class="item_right_btn">
+									<a href="javascript:;" id='show-actions' class="weui_btn weui_btn_mini weui_btn_primary">操作</a>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+			<input type="hidden" name="csrf" value="17e5b33e0aa29e051394bb90cb4148990215e240" />
+
+			<script type="text/javascript">
+				var token = $("input[name='csrf']").val();
+				var type = "1";
+				$(".bts .sure").click(function() {
+					var tags = new Array();
+					var checked = "a1_a2";
+					$(".moreinner .active").each(function() {
+						var val = $(this).attr("value");
+						tags.push(val);
+					});
+					$.ajax({
+						url: 'searchUrl.html',
+						type: 'post',
+						dataType: 'json',
+						data: {
+							"csrf": token,
+							"tags": tags,
+							"checked": checked,
+							"is_ajax": 1,
+							"type": type
+						},
+						success: function(data) {
+							window.location.href = data.message;
+						},
+						error: function(data) {
+							//resultTip("网络错误，请重试",false);
+						}
+					});
+				});
+
+				$(document).ready(function() {
+					//筛选条件
+					$(".typebox .slide").click(function() {
+						if($(this).hasClass("active")) {
+							var _t = $(this).index();
+							$(this).removeClass("active");
+							$(".transparentmask").hide();
+							$(".typebox").removeClass("active");
+							$(".conditions ul").stop().eq(_t).hide();
+						} else {
+							$(".transparentmask").show();
+							$(".typebox").addClass("active");
+							$(".typebox li").removeClass("active");
+							$(this).addClass("active");
+							var _t = $(this).index();
+							$(".conditions ul").stop().hide();
+							$(".more").stop().hide();
+							$(".bts").stop().hide();
+							$(".closemore").stop().hide();
+							$(".conditions ul").stop().eq(_t).slideDown(100);
+						}
+					});
+					//关闭条件
+					$(".conditions ul li").click(function() {
+						$(".conditions ul li").removeClass("activecolor");
+						$(".typebox").removeClass("active");
+						$(this).addClass("activecolor");
+						$(".transparentmask").hide();
+						$(".conditions ul").hide();
+						var _con = $(this).html();
+						var _s = $(this).parent().index();
+						$(".typebox li b").eq(_s).html(_con);
+						$(".typebox li").removeClass("active");
+					});
+					$(".transparentmask").click(function() {
+						$(".typebox").removeClass("active");
+						$(this).hide();
+						$(".conditions ul").hide();
+						$(".typebox li").removeClass("active");
+						$(".more").hide();
+						$(".bts").hide();
+						$(".closemore").hide();
+					});
+					//更多条件
+					var height = $("body").height();
+					var moreheight = height - 40;
+					$(".more").height(moreheight);
+					$(".moreslide").click(function() {
+						if($(this).hasClass("active")) {
+							$(this).removeClass("active");
+							$(".transparentmask").hide();
+							$(".typebox").removeClass("active");
+							$(".conditions ul").hide();
+							$(".more").css("display", "");
+							$(".bts").hide();
+						} else {
+							$(".typebox li").removeClass("active");
+							$(this).addClass("active");
+							$(".transparentmask").hide();
+							$(".typebox").removeClass("active");
+							$(".typebox").addClass("active");
+							$(".more").stop().slideDown(100);
+							$(".conditions ul").hide();
+							$(".bts").show();
+						}
+					});
+					$(".moreinner ul li:not(.moreinner .multi li)").click(function() {
+						if(!$(this).hasClass("forbidden")) {
+							$(this).parent("ul").find("li").removeClass("active");
+							$(this).addClass("active");
+						}
+					});
+					$(".moreinner .multi li").click(function() {
+						if(!$(this).hasClass("forbidden")) {
+							if($(this).hasClass("active")) {
+								$(this).removeClass("active");
+							} else {
+								$(this).addClass("active");
+							}
+						}
+					});
+					$(".bts .clear").click(function() {
+						$(".moreinner li").removeClass("active")
+					});
+					//关闭更多
+					$(".bts .sure,.closemore").click(function() {
+						$(".more").hide();
+						$(".bts").hide();
+						$(".closemore").hide();
+						$(".typebox li").removeClass("active");
+						$(".typebox").removeClass("active");
+					});
+				})
+			</script>
+
+			<!-- 下拉刷新，上拉加载更多 -->
+
+			<script>
+				var src_link = "?s=a1_a2"
+				var counter = 0;
+				// 每页展示4个
+				var num = 4;
+				var pageStart = 0,
+					pageEnd = 0;
+
+				// dropload
+				$('.inner').dropload({
+					scrollArea: window,
+					domUp: {
+						domClass: 'dropload-up',
+						domRefresh: '<div class="dropload-refresh">↓下拉刷新</div>',
+						domUpdate: '<div class="dropload-update">↑释放更新</div>',
+						domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+					},
+					domDown: {
+						domClass: 'dropload-down',
+						domRefresh: '<div class="dropload-refresh">↑上拉加载更多</div>',
+						domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+						domNoData: '<div class="dropload-noData">暂无数据</div>'
+					},
+					loadUpFn: function(me) {
+						$.ajax({
+							type: 'GET',
+							url: src_link,
+							dataType: 'json',
+							data: {
+								"currentPage": 1,
+								"is_ajax": 1,
+								"csrf": $('input[name="csrf"]').val(),
+								"url_param": "a1_a2"
+							},
+							success: function(data) {
+								var result = '';
+								// 为了测试，延迟1秒加载
+								setTimeout(function() {
+									$('.list-container').html('');
+									$('.list-container').html(data.data.html);
+									// 每次数据加载完，必须重置
+									me.resetload();
+									// 重置索引值
+									counter = 0;
+									// 解锁
+									me.unlock();
+									me.noData(false);
+								}, 1000);
+							},
+							error: function(xhr, type) {
+								// 即使加载出错，也得重置
+								me.resetload();
+								$.toast("加载错误");
+							}
+						});
+					},
+					loadDownFn: function(me) {
+						$.ajax({
+							type: 'GET',
+							url: src_link,
+							dataType: 'json',
+							data: {
+								"currentPage": counter + 1,
+								"is_ajax": 1,
+								"csrf": $('input[name="csrf"]').val(),
+								"url_param": "a1_a2"
+							},
+							success: function(data) {
+								var result = '';
+								counter++;
+								pageEnd = num * counter;
+								pageStart = pageEnd - num;
+
+								for(var i = pageStart; i < pageEnd; i++) {
+									result += $data.list[i].html;
+									if((i + 1) >= data.lists.length) {
+										// 锁定
+										me.lock();
+										// 无数据
+										me.noData();
+										break;
+									}
+								}
+								// 为了测试，延迟1秒加载
+								setTimeout(function() {
+									$('.list-container').append(result);
+									// 每次数据加载完，必须重置
+									me.resetload();
+								}, 1000);
+							},
+							error: function(xhr, type) {
+								// 即使加载出错，也得重置
+								me.resetload();
+								$.toast("加载错误");
+							}
+						});
+					},
+					threshold: 20
+
+				});
+
+				$(document).on("click", "#show-actions", function() {
+					$.actions({
+						title: "选择操作",
+						onClose: function() {},
+						actions: [{
+							text: "督查",
+							className: "color-primary",
+							onClick: function() {
+								$.alert("跳转到督查页");
+							}
+						}, {
+							text: "巡查",
+							className: "color-warning",
+							onClick: function() {
+								$.alert("跳转到巡查页");
+							}
+						}]
+					});
+				});
+			</script>
+			<footer>
+
+				<!--底部固定导航 开始-->
+				<div class="weui_tabbar foot_tabbar">
+					<a href="#ssss" class="weui_tabbar_item weui_bar_item_on">
+						<div class="weui_tabbar_icon">
+							<i class="new_icon_footer">
+					</i>
+						</div>
+						<span class="weui_tabbar_label">
+					当前作业
+				</span>
+					</a>
+					<a href="#historys" class="weui_tabbar_item">
+						<div class="weui_tabbar_icon">
+							<i class="new_icon_footer">
+					</i>
+						</div>
+						<span class="weui_tabbar_label">
+					历史作业
+				</span>
+					</a>
+					<a href="#mine" class="weui_tabbar_item">
+						<div class="weui_tabbar_icon">
+							<i class="new_icon_footer">
+					</i>
+						</div>
+						<span class="weui_tabbar_label">
+					我的作业
+				</span>
+					</a>
+					<a href="#config" class="weui_tabbar_item">
+						<div class="weui_tabbar_icon">
+							<i class="new_icon_footer">
+					</i>
+						</div>
+						<span class="weui_tabbar_label">
+					用户中心
+				</span>
+					</a>
+				</div>
+
+			</footer>
+
+	</body>
+
+</html>

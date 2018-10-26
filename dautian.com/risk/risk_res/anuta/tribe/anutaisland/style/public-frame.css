@@ -1,0 +1,88 @@
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input { margin: 0; padding: 0; }
+body { background: url(../images/public/body_bg.png) center center repeat; max-width: 640px; min-width: 320px; height: 100%; margin: 0 auto;-webkit-overflow-scrolling: touch }
+body, body a { -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust: none; font-size: 12px; font-family: HelveticaNeue, Arial, "microsoft yahei"; }
+html{-ms-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;font-size:312.5%}
+body{overflow-x:hidden;height:100%;margin:0 auto;color:#858585;font-size:.24rem;background-color:#e8e8e8;-webkit-overflow-scrolling:touch}
+a, a:hover { text-decoration: none; outline: none; }
+li { list-style: none }
+img { border: none }
+input, select, textarea { border: none; outline: none; background: none }
+textarea { resize: none }
+em,i { font-style: normal }
+strong, h1, h2, h3, h4, h5, h6 { font-weight: normal }
+.clearfix:after { content: ""; display: block; clear: both }
+.clearfix { *zoom: 1
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+}
+.new_icon { background: url(../images/new_icon.png) center center no-repeat; background-size: 200px; }
+/*l(9—*/
+
+/*.back_home{ position:fixed; left:-5px; top:0px; width:60px; height:67px; background:url(../images/public/back_home.png) left top no-repeat;*/
+ /*background-size:60px 67px; z-index:3;}*/
+
+
+@-webkit-keyframes swing {
+ 20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; }
+ 20% { -webkit-transform: rotate(15deg); }
+ 40% { -webkit-transform: rotate(-10deg); }
+ 60% { -webkit-transform: rotate(5deg); }
+ 80% { -webkit-transform: rotate(-5deg); }
+ 100% { -webkit-transform: rotate(0deg); }
+}
+@keyframes swing {
+ 20% { transform: rotate(15deg); }
+ 40% { transform: rotate(-10deg); }
+ 60% { transform: rotate(5deg); }
+ 80% { transform: rotate(-5deg); }
+ 100% { transform: rotate(0deg); }
+}
+
+
+/*.footer_btn .show_bar .btn span{display:inline-block; width:35px; height:35px; background-position:0px -139px;*/
+ /*position:absolute; top:4.5px; right:4.5px;}*/
+
+
+
+@media (min-width:360px){
+}
+
+@-webkit-keyframes fadeIn {
+ from {
+  opacity: 0
+ }
+ to {
+  opacity: 1
+ }
+}
+@keyframes fadeIn {
+ from {
+  opacity: 0
+ }
+ to {
+  opacity: 1
+ }
+}
+
+/*D ã*/
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0 none;
+}
+
+
+
+/*•èáo*/

@@ -1,0 +1,15 @@
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input { margin: 0; padding: 0; }
+body { max-width: 640px; min-width: 320px; height: 100%; margin: 0 auto;-webkit-overflow-scrolling: touch }
+body, body a { -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust: none; font-size: 12px; font-family: HelveticaNeue, Arial, "microsoft yahei"; }
+html{-ms-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;font-size:312.5%}
+body{overflow-x:hidden;height:100%;margin:0 auto;color:#858585;font-size:.24rem;background-color:#e8e8e8;-webkit-overflow-scrolling:touch}
+a, a:hover { text-decoration: none; outline: none; }
+li { list-style: none }
+img { border: none }
+input, select, textarea { border: none; outline: none; background: none }
+textarea { resize: none }
+em,i { font-style: normal }
+strong, h1, h2, h3, h4, h5, h6 { font-weight: normal }
+.clearfix:after { content: ""; display: block; clear: both }
+.clearfix { *zoom: 1
+}

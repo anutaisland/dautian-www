@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>活动内容</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">  
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		<meta content="telephone=no,email=no" name="format-detection">
+		<link rel="stylesheet" href="$__beat.servletContext.contextPath/hdcontent/css/custom.css" />
+		<script src="$__beat.servletContext.contextPath/hdcontent/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container demo-2">
+			<div id="slider" class="sl-slider-wrapper">
+				<div class="sl-slider">
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img " style="background-image:url(http://192.168.1.13/test01/images/2.jpg)"></div>
+                            <h2 style="margin-top:200px;">立意及规划原则</h2>
+							<blockquote>
+								<p>
+									前海企业公馆不仅是硬件的展示，更应是前海精神载体与践行者；
+									<br/>
+									不仅是办公的示范，更应是 未来前海的中心小镇；
+									<br/>
+									不仅是企业的公馆，更应是前海，梦想开始的地方。
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					
+
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img" style="background-image:url(http://192.168.1.13/test01/images/1.jpg)"></div>
+                            <h2 style="margin-top:100px;">立意及规划原则</h2>
+                            <blockquote>
+                                <p>
+                                    前海企业公馆不仅是硬件的展示，更应是前海精神载体与践行者；
+                                    <br />
+                                    不仅是办公的示范，更应是 未来前海的中心小镇；
+                                    <br />
+                                    不仅是企业的公馆，更应是前海，梦想开始的地方。
+                                </p><cite>创新·速度</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img" style="background-image:url(http://192.168.1.13/test01/images/2.jpg)"></div>
+                            <h2 style="margin-top:180px;">立意及规划原则</h2>
+                            <blockquote>
+                                <p>
+                                    前海企业公馆不仅是硬件的展示，更应是前海精神载体与践行者；
+                                    <br />
+                                    不仅是办公的示范，更应是 未来前海的中心小镇；
+                                    <br />
+                                    不仅是企业的公馆，更应是前海，梦想开始的地方。
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+
+					<div class="tc"><img class="arrowBtn" src="$__beat.servletContext.contextPath/hdcontent/images/arrowBtn.png" alt="" /></div>
+					
+				</div>
+			</div>
+		</div>
+		<script src="$__beat.servletContext.contextPath/hdcontent/js/jquery-1.10.0.min.js"></script>
+		<script src="$__beat.servletContext.contextPath/hdcontent/js/jquery.ba-cond.min.js"></script>
+		<script src="$__beat.servletContext.contextPath/hdcontent/js/jquery.slitslider.js"></script>
+		<script src="$__beat.servletContext.contextPath/hdcontent/js/jquery.touchSwipe.min.js"></script>
+		<script>
+			$(function() {
+				$('.sl-slider-wrapper').height($(window).height());
+				var Page = (function() {
+					var $nav = $('#nav-dots > span'), slitslider = $('#slider').slitslider({
+						//interval : 2000, //自动播放时间间隔
+						//autoplay : true, //是否自动播放
+						onBeforeChange : function(slide, pos) {
+							$nav.removeClass('nav-dot-current');
+							$nav.eq(pos).addClass('nav-dot-current');
+						}
+					})
+					
+					$('body').swipe({
+						swipeUp : function(event, direction, distance, duration, fingerCount) {
+							slitslider.next();
+						},
+						swipeDown : function(event, direction, distance, duration, fingerCount) {
+							slitslider.previous();
+						}
+					});
+				})();
+			});
+		</script>
+	</body>
+</html>

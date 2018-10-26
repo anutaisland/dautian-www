@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+  	
+
+	<title>阿岛之家，阿岛人的心家园！</title>
+
+    
+
+	<link rel="stylesheet" href="http://www.dautian.com/vip/css/normalize.css" type="text/css" media="screen">
+
+    <link rel="stylesheet" href="http://www.dautian.com/vip/css/main.css" type="text/css" media="screen">
+
+	
+
+	<!-- Color Scheme -->
+
+    <link rel="stylesheet" href="http://www.dautian.com/vip/css/color.css" type="text/css" media="screen">
+
+</head>
+
+<body> 
+
+	<div id="st-container" class="st-container">
+
+		
+
+		
+
+		<div class="st-pusher">
+
+			<div class="st-content">
+
+				<div class="st-content-inner">
+
+					<!-- Top Navigation -->
+
+					<header>
+
+					  <div id="st-trigger-effects"></div>
+
+						<h1>阿岛之家</h1>
+
+						
+
+					</header>
+
+					
+
+					<div class="content">
+
+						
+						
+
+							
+
+							<table class="text-left">
+
+								<tr class="odd">
+									<th>宗旨</th>
+									<td>守望相助，源聚智享</td>
+								</tr>
+
+								<tr class="odd">
+									<th>理念</th>
+									<td>简单 友爱 分享</td>
+								</tr>
+																
+								<tr class="odd">
+									<th>行动</th>
+									<td>每个周末，期待与你相聚!</td>
+								</tr>
+																
+
+								<tr class="odd">
+
+									<th>致电</th>
+
+									<td>
+
+										<a href="tel:4000530310">4000-530-310</a>									</td>
+								</tr>
+								<tr class="odd">
+
+									<th>微信</th>
+
+									<td>
+
+										18602012890									</td>
+								</tr>
+								<tr class="odd">
+<tr class="odd">
+
+									<th>邮箱</th>
+
+									<td>
+
+<a href="mailto:4712681@qq.com?subject=阿岛之家咨询&body=姓名：%0d%0a职业：%0d%0a电话：%0d%0aQQ：%0d%0a微信：%0d%0a所在社区：">4712681@qq.com</a></td>
+
+								</tr>
+									
+							</table>
+
+						</fieldset>					</div>
+                    
+				</div><!-- /st-content-inner -->
+
+			</div><!-- /st-content -->
+
+		</div><!-- /st-pusher -->
+
+	</div><!-- /st-container -->
+
+
+
+	
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+
+	
+
+	<script src="js/classie.js"></script>
+
+	<script src="js/sidebarEffects.js"></script>
+
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
+

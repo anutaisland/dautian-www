@@ -1,0 +1,46 @@
+/*Z*/
+body{background-color: #ebebeb!important;-webkit-backface-visibility: hidden;}
+.ui-page-theme-a{background-color: #f2f2f2!important;}
+*{text-shadow: none!important;}
+ul,li{margin: 0;padding: 0;list-style: none;}
+a:focus,a:hover,a:active,a:visited{ background:none!important;box-shadow: none!important;text-shadow: none!important;}
+input,select{-webkit-appearance: none;}
+  
+.loading{position: fixed;top:0;left: 0;width: 100%;height: 100%;background-color: #fff;z-index: 100000000;text-align: center;} 
+.loading img{ position: fixed;top: 45%;left: 45%;}
+
+.index .ui-header{ background-color: #009dd9;border: none;text-shadow: none;color: #fff;} 
+.index .ui-header h3{ color: #fff;font-weight: normal;font-size: 1.25em;}
+
+.index .ui-footer{ background-color:#66ccff;width: 100%; }
+.index .ui-footer a{font-size: 1.25em; color: #fff;padding:0.7em 0;display: block;width: 100%;text-shadow: none;margin: 0;border-radius: 0;text-decoration: none;} 
+.index .ui-footer a:first-child{ border-right: 1px dotted #fff;}
+.index .ui-footer ul{display: table;width: 100%;}
+.index .ui-footer ul li{ display: table-cell;width: 50%;text-align: center;}
+
+.ui-content{padding: 0;}
+.index .ui-content .slick {position: relative;}
+.index .ui-content .slick .slick-list li{ width:100% ;overflow: hidden; height: 30%;}
+.index .ui-content .slick .slick-list li img{width: 100%;}
+.index .ui-content .slick .slick-dots{ position: absolute; bottom: 0.5em; left: 0;width: 100%; text-align: center;}
+.index .ui-content .slick .slick-dots li{ display: inline-block;}
+.index .ui-content .slick .slick-dots li button{ float: left; border: none; background-color: #fff; border-radius: 50%;font-size: 0;padding: 5px;margin-right: 5px;}
+.index .ui-content .slick .slick-dots .slick-active button{ background-color: #ff6600;}
+
+.index .ui-content .index-year{ width: 100%; overflow: hidden;margin-bottom: 4%;background-color: #fff}
+.index .ui-content .index-year a{text-decoration: none;display: block;text-shadow: none;}
+.index .ui-content .index-year dt{background-color: #ff9966;color: #fff;font-size: 1em;padding: 0.4em 0;padding-left: 0.4em; }
+.index .ui-content .index-year dd{ width: 100%; overflow: hidden; display: table;padding: 2em 0;margin: 0;}
+.index .ui-content .index-year dd h4{ display: table-cell;font-size: 1.75em;font-weight: normal; color: #009DD9;text-indent: 1em;}
+.index .ui-content .index-year dd p{ display: table-cell; text-align: center;font-size: 1.75em;color: #009DD9;}
+
+
+
+
+
+
+
+
+
+
+
